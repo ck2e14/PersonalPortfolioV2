@@ -1,0 +1,91 @@
+.card-wrapper {
+   position: relative;
+   height: 95%;
+   width: 99%;
+   background-color: rgb(22, 22, 22);
+   border: 2px solid rgba(255, 255, 255, 0);
+   border-radius: 20px;
+}
+
+.backdrop-card-front {
+   /* max-height: 40vh; */
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   filter: brightness(.5);
+   transition: all .25s;
+   opacity: .5;
+   border-radius: 20px;
+   border-color: rgba(0, 0, 0, 0);
+   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.backdrop-card-front:hover {
+   filter: brightness(1) saturate(1.5);
+   opacity: .8;
+}
+
+/* FRONT OF CARD ELEMENTS */
+.card-front {
+   display: flex;
+   /* justify-content: center; */
+   /* align-items: center; */
+   height: 100%;
+}
+
+.project-name {
+   z-index: 999;
+   color: white;
+   height: fit-content;
+   margin-top: 5%;
+   /* transform: translate(-50%, -50%); */
+   font-size: 4vw;
+   background: rgba(0, 0, 0, 0.733);
+   pointer-events: none
+   ;
+}
+
+/* BACK OF CARD ELEMENTS */
+.card-back {
+   position: relative;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   border-radius: 20px;
+}
+
+.card-back-text-wrap-flex {
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+   width: 100%;   
+   height: 100%;
+   border: 2px dashed rgb(95, 95, 95);
+}
+
+.card-back-flex-item {
+   flex: 1;
+   border-radius: 20px;
+
+   border: 2px dashed rgb(95, 95, 95);
+}
+
+@-webkit-keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ @keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ 

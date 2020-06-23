@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-background-slider": "^2.0.0",
+    "react-images": "^1.1.7",
+    "react-responsive-carousel": "^3.2.8",
+    "react-slideshow-image": "^1.5.3"
+  }
+}

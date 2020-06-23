@@ -1,0 +1,19 @@
+.projects-wrapper-flex {
+   display: flex;
+   flex-direction: row;
+   height: 95%;
+   max-width: 47vw;
+   /* border: 2px solid green; */
+   padding-left: 5%;
+   overflow-x: scroll;
+   overflow-y: visible !important;
+}
+
+.projects-wrapper-flex::-webkit-scrollbar {
+   display: none;
+}
+.projects-flex-item {
+   /* border: 2px solid white; */
+   flex: 1;
+   min-width: 45vw;
+}

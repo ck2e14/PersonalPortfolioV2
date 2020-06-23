@@ -1,0 +1,11 @@
+.resume-wrapper-flex {
+   min-height: 100%;
+   min-width: 200%;
+   border: 2px solid green;
+}
+
+.resume-pdf {
+   border: 2px solid white;
+   border-radius: 10px !important;
+   overflow: visible;
+}
