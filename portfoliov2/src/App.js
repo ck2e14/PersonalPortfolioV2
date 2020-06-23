@@ -88,7 +88,7 @@ function App() {
           onClick={handleProjectsClick} >
           { !projectsIsActive ? 
             <div className="card-title-text">
-              WORKS
+              PROJECTS
             </div> 
          : <ProjectsContainer /> }
         </div>    

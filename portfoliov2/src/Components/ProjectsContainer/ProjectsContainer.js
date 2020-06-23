@@ -20,20 +20,45 @@ export default function ProjectsContainer() {
                projectName={'Pebble Solutions'} 
                media={pebble1} 
                media2={pebble2}
-               
+               what={'Designed, created and maintained via FTP.'}
+               how={'React.js, vanilla CSS3, mobile responsive.' }
+               url={'https://www.pebblesolutions.com'}
                />
          </div>  
 
          <div className="projects-flex-item">
-            <ProjectCard projectName={'MapStar'} media={mapstar} media2={mapstar}/>
+            <ProjectCard 
+               projectName={'MapStar'} 
+               media={mapstar} 
+               media2={mapstar}
+               what={'Google API-led route manager and directions service.'}
+               how={'Async Ajax, React.js, CSS3, Rails API'}
+               url={'https://github.com/ck2e14/Mod4Project'}
+               />
          </div>  
          
          <div className="projects-flex-item">
-            <ProjectCard projectName={'eXchange'} media={exchange} media2={exchange}/>
+            <ProjectCard 
+            projectName={'eXchange'} 
+            media={exchange} 
+            media2={exchange}
+            what={'Currency exchange rate calculator. Rates pulled live from exchangeratesapi.io upon page load'}
+            how={'React.js, Ajax JavaScript, vanilla CSS3'}
+            url={'https://practical-goldstine-fa44e5.netlify.app/'}
+            />
+
          </div>  
+
          
          <div className="projects-flex-item">
-            <ProjectCard projectName={'Hygenik'} media={hygenik3} media2={hygenik}/>
+            <ProjectCard 
+            projectName={'Hygenik'} 
+            media={hygenik3} 
+            media2={hygenik}
+            what={'Locations services-led app that reveals FSA hygiene ratings and information for food-serving premises.'}
+            how={'React.js, Async Ajax JavaScript, CSS3, JWT-Authentication, Rails API backend'}
+            url={'https://github.com/ck2e14/frontend5'}
+            />
          </div>
    
       </div>

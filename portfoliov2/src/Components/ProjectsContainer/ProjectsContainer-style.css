@@ -12,8 +12,10 @@
 .projects-wrapper-flex::-webkit-scrollbar {
    display: none;
 }
+
 .projects-flex-item {
    /* border: 2px solid white; */
    flex: 1;
    min-width: 45vw;
+
 }

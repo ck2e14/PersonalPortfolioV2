@@ -1,5 +1,7 @@
 *{
   font-family: 'Roboto', sans-serif;
+  text-decoration: none !important;
+  color: white;
 }
 
 .center-this {
@@ -105,6 +107,7 @@
 .active {
   /* height: 8% */
 }
+
 
 @-webkit-keyframes slide-in-blurred-bottom {
   0% {
