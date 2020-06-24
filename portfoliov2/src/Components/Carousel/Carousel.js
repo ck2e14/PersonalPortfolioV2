@@ -20,7 +20,7 @@ const Slideshow = () => {
               mbcode, reactPic, code7, code6, code4, mbcode2,
             ]}
 
-            duration={3} transition={3} 
+            duration={6} transition={1} 
             />
       </div>
     )

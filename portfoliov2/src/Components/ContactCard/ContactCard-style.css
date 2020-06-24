@@ -3,6 +3,7 @@
    /* border: 2px solid green; */
    height: 80%;
    width: 85%;
+   top: 10%;
    display: flex; 
    justify-content: center;
    /* align-items: center; */
@@ -10,40 +11,95 @@
    /* padding-left: 30%; */
    /* background-color: rgba(31, 31, 31); */
    border-radius: 20px;
-   ;
+   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .contact-link {
    transition: all .2s;
    color: rgb(105, 105, 105);
    font-size: 3vw;
-   background: black;
+   width: 17vw;
+   margin-left: 5%;
+   height: 6vh;
+   background: rgb(27, 27, 27);
+
    font-weight: bold;
    text-transform: uppercase;
+   margin-top: 1%;
+   padding: 2%;
+   transition: all .5s;
+}
+
+::-webkit-full-page-media, _:future, :root .linked-in-link{
+
+font-size: 2.5vw;
+
 }
 
 .contact-link:hover {
-   color: white;
+   color: rgb(0, 255, 234);
    font-weight: bold;
+   width: 39vw;
+   height: 8vh;
+   /* font-size:3.25vw; */
+   background-color: black;
    transform: scale(1.025);
    animation: none !important;
+   transition: all .5s;
    border-radius:5px;
 }
 
+.email-link:hover {
+  width: 30vw;
+}
+
+.github-link:hover {
+  width: 28vw;
+}
+
 .contact-link span {
-   font-size: 1.2vw;
+   font-size: 1vw;
    font-style: italic;
    filter: brightness(.5);
    text-align: right;
    text-align: center;
    color: grey;
-   transition: all .5s;
+   transition: all 5s;
    opacity: 0;
+   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   display: none;
+   visibility: hidden;
 }
 
 .contact-link:hover > span {
    color: rgb(223, 41, 41);
-  color: rgb(0, 255, 234);
+  color: rgb(255, 255, 255);
   opacity: 1;
+  display: inline;
+  visibility: visible;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: .2s;  
 
 }
+
+@-webkit-keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+@keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+ 

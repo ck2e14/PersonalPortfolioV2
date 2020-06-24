@@ -2,29 +2,20 @@
    position: relative;
    height: 95%;
    width: 99%;
-   background-color: rgba(0, 0, 0, 0);
+   /* background-color: rgba(0, 0, 0, 0.514); */
    border: 2px solid rgba(255, 255, 255, 0);
-   border-radius: 20px;
+   border-radius: 10px;
    z-index: 999;
+   overflow: visible;
 }
 
 .backdrop-card-front {
-   /* max-height: 40vh; */
    height: 100%;
    width: 100%;
    position: absolute;
-   filter: brightness(.5);
    transition: all .25s;
-   opacity: .5;
-   border-radius: 20px;
+   border-radius: 10px;
    border-color: rgba(0, 0, 0, 0);
-   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.backdrop-card-front:hover {
-   filter: brightness(.7) saturate(1.5);
-   opacity: .8;
 }
 
 /* FRONT OF CARD ELEMENTS */
@@ -43,11 +34,13 @@
    /* transform: translate(-50%, -50%); */
    font-size: 2.1vw;
    font-weight: bold;
-   background: rgba(0, 0, 0, 1);
+   letter-spacing: .25vw;
+   background: #1B1B1B;
    padding: 1%;
    /* border-radius: 10px; */
    border-top-left-radius: 10px;
-   border-bottom-left-radius: 0;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
    pointer-events: none;
    text-transform: uppercase;
 }
@@ -61,11 +54,12 @@
    /* height: 100%; */
    /* width: 100%; */
    border-radius: 20px;
-   background-color: rgb(0, 0, 0);
-   border: 3px solid rgb(70, 70, 70);
+   background: rgb(27, 27, 27);
+ 
+   border: 3px solid rgba(70, 70, 70, 0);
    /* border: none; */
-   padding: 2%;
-   color: black !important;
+   padding: 4%;
+   color: rgb(206, 63, 63) !important;
 }
 
 .card-back-text-wrap-flex {
@@ -98,15 +92,15 @@
    font-size: 2vw;
    opacity: .3;
 
- }
+}
  
- .project-link:hover {
+.project-link:hover {
    color:cyan;
    transform: translateY(-5%);
    opacity: 1;
- }
+}
 
- .return-icon {
+.return-icon {
    max-height: 15%;
    min-height: 60px;
    cursor: pointer;
@@ -114,14 +108,13 @@
    right: 8%;
    top: 5%;
    z-index: 9999999;
-   opacity: .3;
    transition: all .15s;
- }
+}
 
- .return-icon:hover {
+.return-icon:hover {
    transform: translateX(-10%); 
    opacity: 0.99 ;
- }
+}
 
 @-webkit-keyframes fade-in {
    0% {
@@ -130,7 +123,8 @@
    100% {
      opacity: 1;
    }
- }
+}
+
  @keyframes fade-in {
    0% {
      opacity: 0;
@@ -138,5 +132,5 @@
    100% {
      opacity: 1;
    }
- }
+}
  

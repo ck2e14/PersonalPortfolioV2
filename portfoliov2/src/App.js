@@ -7,6 +7,15 @@ import AboutCard from './Components/AboutCard/AboutCard.js';
 import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
 import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.js';
 import ContactCard from '../src/Components/ContactCard/ContactCard.js';
+import BackgroundSlider from 'react-background-slider';
+import mbcode from './Assets/mbcode.jpg'
+import mbcode2 from './Assets/mbode2.jpg'
+import reactPic from './Assets/reaact.jpg'
+import code5 from './Assets/code5.jpg'
+import code4 from './Assets/code4.jpg'
+import code6 from './Assets/code6.jpg'
+import code7 from './Assets/code7.jpg'
+
 
 function App() {
 
@@ -18,8 +27,8 @@ function App() {
   const handleAboutClick = () => {
     setAboutIsActive(!aboutIsActive );
     setContactIsActive(false);
-    setResumeIsActive(false);
-    setProjectsIsActive(false);
+    // setResumeIsActive(false);
+    // setProjectsIsActive(false);
   }
 
   const handleResumeClick = () => {
@@ -31,9 +40,9 @@ function App() {
 
   const handleContactClick = () => {
     setContactIsActive(!contactIsActive);
-    setResumeIsActive(false);
+    // setResumeIsActive(false);
     setAboutIsActive(false);
-    setProjectsIsActive(false);
+    // setProjectsIsActive(false);
   }
 
    const handleProjectsClick = () => {
@@ -58,15 +67,20 @@ function App() {
 
   return (
     <>
+ 
     <div className="shader-layer"></div>
     <div className="center-this">
-       <Carousel/>  
+     
+      <BackgroundSlider
+        images={[ code5, mbcode, reactPic, code7, code6, code4, mbcode2 ]}
+        duration={6} transition={1}       
+      />
+     
       <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/>
       <div className="app-grid-container">
 
         <div className="app-grid-square sq-3"
-        onClick={handleResumeClick}   
-        >
+          onClick={handleResumeClick}   >
 
           { !resumeIsActive ? 
             <div className="card-title-text">
@@ -75,10 +89,11 @@ function App() {
          : <ResumeContainer /> }
         </div>    
         
-        <div className="app-grid-square sq-1 hvr-ripple-out"
-          onClick={handleAboutClick} >
+        <div className="app-grid-square sq-1 hvr-ripple-out">
           { !aboutIsActive ? 
-            <div className="card-title-text">
+            <div className="card-title-text"
+              onClick={handleAboutClick}
+              onMouseEnter={handleAboutClick}>
             ABOUT
           </div> 
          : <AboutCard /> }
@@ -94,10 +109,11 @@ function App() {
          : <ProjectsContainer /> }
         </div>    
         
-        <div className="app-grid-square sq-4"
-        onClick={handleContactClick} >
+        <div className="app-grid-square sq-4">
            { !contactIsActive ? 
-            <div className="card-title-text">
+            <div className="card-title-text" 
+              onClick={handleContactClick}
+              onMouseEnter={handleContactClick}>
               CONTACT
           </div> 
          : <ContactCard/> }

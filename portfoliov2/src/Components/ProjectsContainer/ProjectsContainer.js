@@ -16,7 +16,7 @@ export default function ProjectsContainer() {
 
          <div className="projects-flex-item">
             <ProjectCard 
-               projectName={'Pebble Solutions'} 
+               projectName={'PebbleSolutions.com'} 
                media={pebble1} 
                media2={pebble2}
                what={'Designed, created and maintained a "brochure" style frontend for Pebble. Server interaction via FTP.'}
