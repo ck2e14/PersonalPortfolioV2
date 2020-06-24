@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import logo2 from './Assets/logo5.png';
 import Carousel from './Components/Carousel/Carousel'
 import './App.css';
-import AboutContainer from './Components/AboutContainer/AboutContainer.js';
+import AboutCard from './Components/AboutCard/AboutCard.js';
 import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
 import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.js';
 import ContactCard from '../src/Components/ContactCard/ContactCard.js';
@@ -81,7 +81,7 @@ function App() {
             <div className="card-title-text">
             ABOUT
           </div> 
-         : <AboutContainer /> }
+         : <AboutCard /> }
          
         </div>    
         

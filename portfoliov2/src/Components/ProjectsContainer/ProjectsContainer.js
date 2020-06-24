@@ -10,7 +10,6 @@ import hygenik from '../../Assets/hygenik.png';
 // import hygenik2 from '../../Assets/hygenik2.png';
 import hygenik3 from '../../Assets/hygenik3.png';
 
-
 export default function ProjectsContainer() {
    return (
       <div className='projects-wrapper-flex'>
@@ -20,7 +19,7 @@ export default function ProjectsContainer() {
                projectName={'Pebble Solutions'} 
                media={pebble1} 
                media2={pebble2}
-               what={'Designed, created and maintained via FTP.'}
+               what={'Designed, created and maintained a "brochure" style frontend for Pebble. Server interaction via FTP.'}
                how={'React.js, vanilla CSS3, mobile responsive.' }
                url={'https://www.pebblesolutions.com'}
                />
@@ -32,7 +31,7 @@ export default function ProjectsContainer() {
                media={mapstar} 
                media2={mapstar}
                what={'Google API-led route manager and directions service.'}
-               how={'Async Ajax, React.js, CSS3, Rails API'}
+               how={'Async Ajax, React.js, JWT-Authentication, CSS3, Rails API'}
                url={'https://github.com/ck2e14/Mod4Project'}
                />
          </div>  
@@ -42,20 +41,19 @@ export default function ProjectsContainer() {
             projectName={'eXchange'} 
             media={exchange} 
             media2={exchange}
-            what={'Currency exchange rate calculator. Rates pulled live from exchangeratesapi.io upon page load'}
+            what={'Currency exchange rate calculator. Rates pulled live from exchangeratesapi.io upon page load.'}
             how={'React.js, Ajax JavaScript, vanilla CSS3'}
             url={'https://practical-goldstine-fa44e5.netlify.app/'}
             />
 
          </div>  
 
-         
          <div className="projects-flex-item">
             <ProjectCard 
             projectName={'Hygenik'} 
             media={hygenik3} 
             media2={hygenik}
-            what={'Locations services-led app that reveals FSA hygiene ratings and information for food-serving premises.'}
+            what={'Locations services-led app that reveals FSA hygiene ratings and information for nearby food-serving premises. Can blacklist sites.'}
             how={'React.js, Async Ajax JavaScript, CSS3, JWT-Authentication, Rails API backend'}
             url={'https://github.com/ck2e14/frontend5'}
             />

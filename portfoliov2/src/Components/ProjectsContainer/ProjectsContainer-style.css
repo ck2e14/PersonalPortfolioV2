@@ -2,11 +2,11 @@
    display: flex;
    flex-direction: row;
    height: 95%;
-   max-width: 47vw;
+   max-width: 44vw;
    /* border: 2px solid green; */
    padding-left: 5%;
    overflow-x: scroll;
-   overflow-y: hidden !important;
+   overflow-y: visible !important;
 }
 
 .projects-wrapper-flex::-webkit-scrollbar {
@@ -16,6 +16,8 @@
 .projects-flex-item {
    /* border: 2px solid white; */
    flex: 1;
-   min-width: 45vw;
+   min-width: 44vw;
+   margin-right: 10%;
+
 
 }

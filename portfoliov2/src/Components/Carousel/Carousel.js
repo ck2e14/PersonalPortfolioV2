@@ -17,10 +17,10 @@ const Slideshow = () => {
       <div className="slide-container">
         <BackgroundSlider
             images={[ code5, 
-              mbcode, reactPic, code7, code6, code4, mbcode2, codeWall 
+              mbcode, reactPic, code7, code6, code4, mbcode2,
             ]}
 
-            duration={5} transition={3} 
+            duration={3} transition={3} 
             />
       </div>
     )

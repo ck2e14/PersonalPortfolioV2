@@ -1,4 +1,4 @@
-.contact-card-wrapper {
+.about-card-wrapper-flex {
    position: relative;  
    /* border: 2px solid green; */
    height: 80%;
@@ -13,7 +13,7 @@
    ;
 }
 
-.contact-link {
+.about-card-flex-item {
    transition: all .2s;
    color: rgb(105, 105, 105);
    font-size: 3vw;
@@ -22,7 +22,7 @@
    text-transform: uppercase;
 }
 
-.contact-link:hover {
+.about-card-flex-item:hover {
    color: white;
    font-weight: bold;
    transform: scale(1.025);
@@ -30,8 +30,8 @@
    border-radius:5px;
 }
 
-.contact-link span {
-   font-size: 1.2vw;
+.about-card-flex-item span {
+   font-size: 1.1vw;
    font-style: italic;
    filter: brightness(.5);
    text-align: right;
@@ -41,9 +41,9 @@
    opacity: 0;
 }
 
-.contact-link:hover > span {
+.about-card-flex-item:hover > span {
    color: rgb(223, 41, 41);
-  color: rgb(0, 255, 234);
-  opacity: 1;
-
+   color: rgb(0, 255, 234);
+   visibility: visible;
+   opacity: 1;
 }
