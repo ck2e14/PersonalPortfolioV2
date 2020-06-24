@@ -1,0 +1,24 @@
+.contact-card-wrapper {
+   position: relative;  
+   border: 2px solid green;
+   height: 100%;
+   width: 100%;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.name {
+   min-width: 100%;
+   min-height: 18vh;
+   border: 2px solid white;
+}
+
+.links {
+   min-height: 18vh;
+   min-width: 100%;
+   border: 2px solid white;
+
+}

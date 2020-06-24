@@ -13,11 +13,10 @@ export default class ResumeContainer extends Component {
   }
  
   render() {
-    const { pageNumber, numPages } = this.state;
  
     return (
       <div className='resume-wrapper-flex'>
-         <iframe src="/static/media/Resume.8878dfea.pdf" height='510' width='800' className="resume-pdf"></iframe>
+         <iframe src="/static/media/Resume.8878dfea.pdf" title='CK-Resume' height='510' width='800' className="resume-pdf"></iframe>
       </div>
     );
   }

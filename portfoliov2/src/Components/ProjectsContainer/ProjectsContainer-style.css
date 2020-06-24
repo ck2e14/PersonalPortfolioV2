@@ -6,7 +6,7 @@
    /* border: 2px solid green; */
    padding-left: 5%;
    overflow-x: scroll;
-   overflow-y: visible !important;
+   overflow-y: hidden !important;
 }
 
 .projects-wrapper-flex::-webkit-scrollbar {

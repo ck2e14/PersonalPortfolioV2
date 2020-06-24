@@ -5,6 +5,7 @@
    background-color: rgba(0, 0, 0, .8);
    border: 2px solid rgba(255, 255, 255, 0);
    border-radius: 20px;
+   z-index: 999;
 }
 
 .backdrop-card-front {
@@ -52,9 +53,9 @@
    top: 0;
    left: 0;
    height: 100%;
-   width: 100%;
+   /* width: 100%; */
    border-radius: 20px;
-   /* background-color: rgba(17, 17, 17, 0.329); */
+   background-color: rgb(17, 17, 17);
    border: none;
    padding: 2%;
    color: black !important;
@@ -83,34 +84,33 @@
    font-size: 2vw;
    color: grey;
 }
-.project-link-wrapper {
-   /* justify-content: center; */
-}
 
 .project-link {
-   transition: color .5s, transform .5s;
+   transition: color .5s, transform .5s, opacity .25s;
    color: cyan;
    font-size: 2vw;
-
+   opacity: .3;
 
  }
  
  .project-link:hover {
    color: rgb(81, 255, 0);
    transform: translateY(-5%);
+   opacity: 1;
  }
 
  .return-icon {
     max-height: 15%;
     position: absolute;
-    right: 1%;
-    top: 1%;
+    right: 8%;
+    top: 5%;
     z-index: 9999999;
+    opacity: .3;
     transition: all .25s;
  }
 
  .return-icon:hover {
-    transform: translateX(-5%);
+    transform: translateX(-20%);
     /* filter: brightness(2); */
     opacity: 0.99 ;
  }

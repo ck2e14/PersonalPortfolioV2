@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import logo from './Assets/logoIcon3.png';
+import React, { useState } from 'react';
+// import logo from './Assets/logoIcon3.png';
 import logo2 from './Assets/logo5.png';
 import Carousel from './Components/Carousel/Carousel'
 import './App.css';
 import AboutContainer from './Components/AboutContainer/AboutContainer.js';
 import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
 import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.js';
+import ContactCard from '../src/Components/ContactCard/ContactCard.js';
 
 function App() {
 
@@ -50,10 +51,10 @@ function App() {
     setResumeIsActive(false);
   }
 
-  const fadeWholePageBackdrop = () => {
-    const backdrop = document.getElementsByClassName('logo-central')[0]
-    backdrop.classList.add('active')
-  }
+  // const fadeWholePageBackdrop = () => {
+  //   const backdrop = document.getElementsByClassName('logo-central')[0]
+  //   backdrop.classList.add('active')
+  // }
 
   return (
     <>
@@ -99,7 +100,7 @@ function App() {
             <div className="card-title-text">
               CONTACT
           </div> 
-         : null }
+         : <ContactCard/> }
         </div> 
 
       </div>

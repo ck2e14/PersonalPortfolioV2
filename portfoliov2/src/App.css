@@ -27,7 +27,7 @@
     position: relative;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0% 0%;
+    gap: 4% 4%;
     grid-template-areas: ". ." ". .";
     height: 100%;
     width: 98vw;
@@ -35,8 +35,8 @@
 
 .app-grid-square {
   height: 98%;
-  width: 98%;
-  border: 2px solid rgba(255, 255, 255, 0);
+  width: 100%;
+  /* border: 2px solid rgba(136, 30, 30, 0.89); */
   border-radius: 10px;
   color: #ffffff;
   transition: filter .5s, transform .25s;
@@ -61,25 +61,18 @@
 
 .card-title-text {
   z-index: 999;
-  /* color: rgb(255, 255, 255); */
-  /* filter: brightness(.5); */
+  color: rgb(73, 73, 73);
   font-size: 3vw;
-  color: rgb(211, 211, 211) !important;
   font-weight: bold !important;
-  /* text-shadow: 1px 1px 5px rgb(218, 100, 22); */
   background: black;
   letter-spacing: .25vw;
-  transition: margin-top .25s, font-size .5s, color .5s, text-shadow .25s;
+  transition: margin-top .25s, font-size .1s, color .5s, text-shadow .25s, letter-spacing .25s;
 }
 
 .app-grid-square:hover > .card-title-text {
   z-index: 999;
-  /* color: rgb(255, 255, 255); */
-  /* margin-top: -2%; */
-  /* filter: brightness(.8); */
-  /* font-size: 3.8vw; */
-  /* filter: blur(2px); */
-  text-shadow: 10px 10px 10px rgb(219, 219, 219);
+  color: white;
+  /* letter-spacing: .5vw; */
 }
 
 .logo-central {
@@ -89,7 +82,9 @@
   animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   animation-delay: .5s;
   opacity: .99;
+  z-index: 99;
   background-color: none !important ;
+  cursor: pointer;
   /* border: 3px solid rgb(104, 104, 104); */
   /* backdrop-filter: blur(3px); */
 }
@@ -104,9 +99,6 @@
   background-color: rgb(0, 0, 0);
 }
 
-.active {
-  /* height: 8% */
-}
 
 
 @-webkit-keyframes slide-in-blurred-bottom {
