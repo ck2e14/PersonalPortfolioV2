@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-// import logo from './Assets/logoIcon3.png';
 import logo2 from './Assets/logo5.png';
-import Carousel from './Components/Carousel/Carousel'
+// import Carousel from './Components/Carousel/Carousel'
 import './App.css';
 import AboutCard from './Components/AboutCard/AboutCard.js';
 import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
@@ -15,8 +14,7 @@ import code5 from './Assets/code5.jpg'
 import code4 from './Assets/code4.jpg'
 import code6 from './Assets/code6.jpg'
 import code7 from './Assets/code7.jpg'
-
-
+  
 function App() {
 
   const [ aboutIsActive, setAboutIsActive ] = useState(false)
@@ -45,7 +43,7 @@ function App() {
     // setProjectsIsActive(false);
   }
 
-   const handleProjectsClick = () => {
+  const handleProjectsClick = () => {
     setProjectsIsActive(true);
     setContactIsActive(false);
     setAboutIsActive(false);
@@ -60,28 +58,39 @@ function App() {
     setResumeIsActive(false);
   }
 
-  // const fadeWholePageBackdrop = () => {
-  //   const backdrop = document.getElementsByClassName('logo-central')[0]
-  //   backdrop.classList.add('active')
-  // }
+  const handleProjectsHover = () => {
+    setContactIsActive(false);
+    setAboutIsActive(false);
+  }
 
   return (
     <>
- 
     <div className="shader-layer"></div>
     <div className="center-this">
      
       <BackgroundSlider
         images={[ code5, mbcode, reactPic, code7, code6, code4, mbcode2 ]}
-        duration={6} transition={1}       
+        duration={6} 
+        transition={1}       
       />
      
       <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/>
       <div className="app-grid-container">
 
-        <div className="app-grid-square sq-3"
-          onClick={handleResumeClick}   >
+      <div className="app-grid-square sq-2"
+           
+          onMouseEnter={handleProjectsHover} >
+          { !projectsIsActive ? 
+            <div className="card-title-text" 
+              onMouseEnter={handleProjectsClick} >
+              PROJECTS
+            </div> 
+         : <ProjectsContainer /> }
+        </div> 
 
+        <div className="app-grid-square sq-3"
+          onClick={handleResumeClick}   
+          onMouseEnter={handleProjectsHover}>
           { !resumeIsActive ? 
             <div className="card-title-text">
             RESUME
@@ -97,16 +106,6 @@ function App() {
             ABOUT
           </div> 
          : <AboutCard /> }
-         
-        </div>    
-        
-        <div className="app-grid-square sq-2"
-          onClick={handleProjectsClick} >
-          { !projectsIsActive ? 
-            <div className="card-title-text">
-              PROJECTS
-            </div> 
-         : <ProjectsContainer /> }
         </div>    
         
         <div className="app-grid-square sq-4">
@@ -122,11 +121,9 @@ function App() {
       </div>
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
       </link>
     </div>
     </>
-
   );
 }
 
