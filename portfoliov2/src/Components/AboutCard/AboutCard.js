@@ -7,7 +7,7 @@ export default function AboutCard() {
          
          <div className="about-card-flex-item flex-start-elem">
              I AM →
-            <span>  A junior fullstack web developer</span>
+            <span> A junior fullstack web developer</span>
            
          </div>      
 

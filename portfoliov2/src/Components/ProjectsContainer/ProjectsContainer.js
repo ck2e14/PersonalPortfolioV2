@@ -19,7 +19,7 @@ export default function ProjectsContainer() {
                projectName={'PebbleSolutions.com'} 
                media={pebble1} 
                media2={pebble2}
-               what={'Designed, created and maintained a "brochure" style frontend for Pebble. Server interaction via FTP.'}
+               what={'Designed and created a "brochure" style frontend for Pebble.  Server interaction via FTP.'}
                how={'React.js, vanilla CSS3, mobile responsive.' }
                url={'https://www.pebblesolutions.com'}
                />

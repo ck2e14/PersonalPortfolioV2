@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo2 from './Assets/logo5.png';
 // import Carousel from './Components/Carousel/Carousel'
 import './App.css';
@@ -14,13 +14,15 @@ import code5 from './Assets/code5.jpg'
 import code4 from './Assets/code4.jpg'
 import code6 from './Assets/code6.jpg'
 import code7 from './Assets/code7.jpg'
-  
+
 function App() {
 
   const [ aboutIsActive, setAboutIsActive ] = useState(false)
   const [ resumeIsActive, setResumeIsActive ] = useState(false)
   const [ contactIsActive, setContactIsActive ] = useState(false)
   const [ projectsIsActive, setProjectsIsActive ] = useState(false)
+  const [ slideShowRendered, setSlideShowRendered ] = useState(false)
+  const [ showLogo, setShowLogo ] = useState(false)
 
   const handleAboutClick = () => {
     setAboutIsActive(!aboutIsActive );
@@ -63,66 +65,82 @@ function App() {
     setAboutIsActive(false);
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLogo(true)
+    },1500);
+    setTimeout(() => {
+      setSlideShowRendered(true)
+    }, 5000);
+  },[])
+
   return (
     <>
-    <div className="shader-layer"></div>
-    <div className="center-this">
      
-      <BackgroundSlider
+      
+       <div className="center-this">
+       {/* <BackgroundSlider
         images={[ code5, mbcode, reactPic, code7, code6, code4, mbcode2 ]}
         duration={6} 
         transition={1}       
-      />
+      />  */}
+
+      { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
+      
+      
+
+      { slideShowRendered ?  <div className="app-grid-container">
+
+<div className="app-grid-square sq-2"
      
-      <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/>
-      <div className="app-grid-container">
+    onMouseEnter={handleProjectsHover} >
+    { !projectsIsActive ? 
+      <div className="card-title-text" 
+        onMouseEnter={handleProjectsClick} >
+        PROJECTS
+      </div> 
+   : <ProjectsContainer /> }
+  </div> 
 
-      <div className="app-grid-square sq-2"
-           
-          onMouseEnter={handleProjectsHover} >
-          { !projectsIsActive ? 
-            <div className="card-title-text" 
-              onMouseEnter={handleProjectsClick} >
-              PROJECTS
-            </div> 
-         : <ProjectsContainer /> }
-        </div> 
+  <div className="app-grid-square sq-3"
+    onClick={handleResumeClick}   
+    onMouseEnter={handleProjectsHover}>
+    { !resumeIsActive ? 
+      <div className="card-title-text">
+      RESUME
+    </div> 
+   : <ResumeContainer /> }
+  </div>    
+  
+  <div className="app-grid-square sq-1 hvr-ripple-out">
+    { !aboutIsActive ? 
+      <div className="card-title-text"
+        onClick={handleAboutClick}
+        onMouseEnter={handleAboutClick}>
+      ABOUT
+    </div> 
+   : <AboutCard /> }
+  </div>    
+  
+  <div className="app-grid-square sq-4">
+     { !contactIsActive ? 
+      <div className="card-title-text" 
+        onClick={handleContactClick}
+        onMouseEnter={handleContactClick}>
+        CONTACT
+    </div> 
+   : <ContactCard/> }
+  </div> 
 
-        <div className="app-grid-square sq-3"
-          onClick={handleResumeClick}   
-          onMouseEnter={handleProjectsHover}>
-          { !resumeIsActive ? 
-            <div className="card-title-text">
-            RESUME
-          </div> 
-         : <ResumeContainer /> }
-        </div>    
-        
-        <div className="app-grid-square sq-1 hvr-ripple-out">
-          { !aboutIsActive ? 
-            <div className="card-title-text"
-              onClick={handleAboutClick}
-              onMouseEnter={handleAboutClick}>
-            ABOUT
-          </div> 
-         : <AboutCard /> }
-        </div>    
-        
-        <div className="app-grid-square sq-4">
-           { !contactIsActive ? 
-            <div className="card-title-text" 
-              onClick={handleContactClick}
-              onMouseEnter={handleContactClick}>
-              CONTACT
-          </div> 
-         : <ContactCard/> }
-        </div> 
-
-      </div>
+</div>
+: null }
+     
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
       </link>
-    </div>
+    </div> 
+    <div className="shader-layer"></div>
+
     </>
   );
 }
