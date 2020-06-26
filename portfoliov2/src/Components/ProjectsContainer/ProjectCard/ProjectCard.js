@@ -44,7 +44,7 @@ export default function ProjectCard(props) {
                   <img src={props.media2} onMouseEnter={flickBackgroundimage}  onMouseLeave={flickBackgroundimage} onMouseMove={flickBackgroundimage} alt="" className="backdrop-card-front"/>
               }
 
-                  <div onClick={console.log('yes')} className="project-name">
+                  <div className="project-name">
                      {props.projectName}
                   </div>
 

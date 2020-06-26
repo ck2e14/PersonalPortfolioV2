@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const file ='https://filedn.com/lT4OmM0YRVMziUYigTE1Ok5/ResumeNew.pdf'
+const file ='https://filedn.com/lT4OmM0YRVMziUYigTE1Ok5/LatestResume2020.pdf'
 
 export default class ResumeContainer extends Component {
   render() {

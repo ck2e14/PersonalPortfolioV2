@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import logo2 from './Assets/logo5.png';
-// import Carousel from './Components/Carousel/Carousel'
 import './App.css';
 import AboutCard from './Components/AboutCard/AboutCard.js';
 import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
 import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.js';
 import ContactCard from '../src/Components/ContactCard/ContactCard.js';
-import BackgroundSlider from 'react-background-slider';
-import mbcode from './Assets/mbcode.jpg'
-import mbcode2 from './Assets/mbode2.jpg'
-import reactPic from './Assets/reaact.jpg'
-import code5 from './Assets/code5.jpg'
-import code4 from './Assets/code4.jpg'
-import code6 from './Assets/code6.jpg'
-import code7 from './Assets/code7.jpg'
+
 
 function App() {
 

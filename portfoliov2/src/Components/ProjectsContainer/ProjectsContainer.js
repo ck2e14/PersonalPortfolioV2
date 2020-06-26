@@ -18,7 +18,7 @@ export default function ProjectsContainer() {
                projectName={'PebbleSolutions'} 
                media={pebble1} 
                media2={pebble2}
-               what={'Designed and created a "brochure" style frontend for Pebble. Ongoing  Server interaction via FTP.'}
+               what={'Designed and created a "brochure" style frontend for Pebble. Ongoing site maintenance and updates via FTP.'}
                how={'React.js, vanilla CSS3, mobile responsive.' }
                url={'https://www.pebblesolutions.com'}
                />
@@ -59,8 +59,8 @@ export default function ProjectsContainer() {
          </div>
    
          <div className="not-a-flex">
+         SCROLL
             <img src={arrow3} alt="" className="nav-arrow"/>   
-            Scroll
          </div>
          
          
