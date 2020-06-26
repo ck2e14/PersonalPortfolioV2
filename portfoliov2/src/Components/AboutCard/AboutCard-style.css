@@ -29,11 +29,9 @@
    transition: all .5s; 
 }
 
-
-
 .about-card-flex-item:hover {
    color: white;
-   color: rgb(0, 255, 213);
+   /* color: rgb(0, 255, 213); */
    font-weight: bold;
    /* transform: scale(1.025); */
    height: 8vh;
@@ -46,7 +44,7 @@
 }
 
 .about-card-flex-items1and2:hover {
-   color: rgb(0, 255, 213);
+   /* color: rgb(0, 255, 213); */
    font-weight: bold;
    /* transform: scale(1.025); */
    height: 12vh;
@@ -62,7 +60,7 @@
 
    font-size: 2.5vw;
    
-   }
+}
 
 .about-card-flex-item span {
    font-size: 1.1vw;
@@ -82,12 +80,12 @@
 
 .about-card-flex-item:hover > span {
    color: rgb(223, 41, 41);
-   color: rgb(255, 255, 255);
+   color: rgb(0, 255, 221);
    visibility: visible;
    opacity: 1;
    display: inline;
-   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-           animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   -webkit-animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
    animation-delay: .1s;
            
 }
@@ -98,22 +96,6 @@
    opacity: 1;
 }
 
-/* .flex-start-elem {
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-}
-
-.flex-end-elem {
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-} */
-
-
-/**
- * ----------------------------------------
- * animation fade-in
- * ----------------------------------------
- */
  @-webkit-keyframes fade-in {
    0% {
      opacity: 0;
@@ -122,6 +104,7 @@
      opacity: 1;
    }
  }
+ 
  @keyframes fade-in {
    0% {
      opacity: 0;

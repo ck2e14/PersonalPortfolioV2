@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import './ProjectCard-style.css';
 // import CardCarousel from './CardCarousel/CardCarousel'
 // import returnIcon from '../../../Assets/return.png';
@@ -10,9 +10,6 @@ export default function ProjectCard(props) {
 
    const [ showFront, setShowFront ] = useState(true);
    const [ changeBackground, setChangeBackground ] = useState(false);
-
-   useEffect(()=> {
-   },[])
 
    const flickBackgroundimage = () => {
       setTimeout(()=> {
@@ -30,8 +27,8 @@ export default function ProjectCard(props) {
    }
 
    return (
-      <div className='card-wrapper'
-            >
+      <div className='card-wrapper'>
+
          {showFront ?  
 
             <div className="card-front" >

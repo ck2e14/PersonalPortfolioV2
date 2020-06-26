@@ -27,8 +27,8 @@ function App() {
   const handleAboutClick = () => {
     setAboutIsActive(!aboutIsActive );
     setContactIsActive(false);
-    // setResumeIsActive(false);
-    // setProjectsIsActive(false);
+    setResumeIsActive(false);
+    setProjectsIsActive(false);
   }
 
   const handleResumeClick = () => {
@@ -40,9 +40,9 @@ function App() {
 
   const handleContactClick = () => {
     setContactIsActive(!contactIsActive);
-    // setResumeIsActive(false);
+    setResumeIsActive(false);
     setAboutIsActive(false);
-    // setProjectsIsActive(false);
+    setProjectsIsActive(false);
   }
 
   const handleProjectsClick = () => {
@@ -68,79 +68,69 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(true)
-    },1500);
+    },500);
     setTimeout(() => {
       setSlideShowRendered(true)
-    }, 5000);
+    }, 2000);
   },[])
 
   return (
     <>
-     
-      
        <div className="center-this">
-       {/* <BackgroundSlider
-        images={[ code5, mbcode, reactPic, code7, code6, code4, mbcode2 ]}
-        duration={6} 
-        transition={1}       
-      />  */}
 
       { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
-      
-      
 
-      { slideShowRendered ?  <div className="app-grid-container">
+        { slideShowRendered ? 
+        <div className="app-grid-container">
+          <div className="app-grid-square sq-2" 
+          onMouseEnter={handleProjectsHover} >
+            { !projectsIsActive ? 
+              <div className="card-title-text" 
+                onClick={handleProjectsClick} >
+                PROJECTS 
+              </div> 
+          : <ProjectsContainer /> }
+          </div> 
 
-<div className="app-grid-square sq-2"
-     
-    onMouseEnter={handleProjectsHover} >
-    { !projectsIsActive ? 
-      <div className="card-title-text" 
-        onMouseEnter={handleProjectsClick} >
-        PROJECTS
-      </div> 
-   : <ProjectsContainer /> }
-  </div> 
+          <div className="app-grid-square sq-3"
+            onClick={handleResumeClick}   
+            onMouseEnter={handleProjectsHover} >
+            { !resumeIsActive ? 
+              <div className="card-title-text">
+              RESUME 
+            </div> 
+          : <ResumeContainer /> }
+          </div>    
+          
+          <div className="app-grid-square sq-1 hvr-ripple-out">
+            { !aboutIsActive ? 
+              <div className="card-title-text"
+                onClick={handleAboutClick} >
+               ABOUT 
+            </div> 
+          : <AboutCard /> }
+          </div>    
+          
+          <div className="app-grid-square sq-4">
+            { !contactIsActive ? 
+              <div className="card-title-text" 
+                onClick={handleContactClick} >
+                CONTACT 
+            </div> 
+          : 
+            <ContactCard/> 
+          }
+        </div> 
 
-  <div className="app-grid-square sq-3"
-    onClick={handleResumeClick}   
-    onMouseEnter={handleProjectsHover}>
-    { !resumeIsActive ? 
-      <div className="card-title-text">
-      RESUME
-    </div> 
-   : <ResumeContainer /> }
-  </div>    
-  
-  <div className="app-grid-square sq-1 hvr-ripple-out">
-    { !aboutIsActive ? 
-      <div className="card-title-text"
-        onClick={handleAboutClick}
-        onMouseEnter={handleAboutClick}>
-      ABOUT
-    </div> 
-   : <AboutCard /> }
-  </div>    
-  
-  <div className="app-grid-square sq-4">
-     { !contactIsActive ? 
-      <div className="card-title-text" 
-        onClick={handleContactClick}
-        onMouseEnter={handleContactClick}>
-        CONTACT
-    </div> 
-   : <ContactCard/> }
-  </div> 
-
-</div>
-: null }
+      </div>
+      : null }
      
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
       </link>
+
     </div> 
     <div className="shader-layer"></div>
-
     </>
   );
 }

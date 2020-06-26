@@ -3,11 +3,10 @@ import ProjectCard from './ProjectCard/ProjectCard.js';
 import './ProjectsContainer-style.css';
 import pebble1 from '../../Assets/pebble1.png';
 import pebble2 from '../../Assets/pebble2.png';
-// import pebble3 from '../../Assets/pebble3.png';
+import arrow3 from '../../Assets/arrow3.png'
 import exchange from '../../Assets/eXchange.png';
 import mapstar from '../../Assets/mapstar.png';
 import hygenik from '../../Assets/hygenik.png';
-// import hygenik2 from '../../Assets/hygenik2.png';
 import hygenik3 from '../../Assets/hygenik3.png';
 
 export default function ProjectsContainer() {
@@ -19,7 +18,7 @@ export default function ProjectsContainer() {
                projectName={'PebbleSolutions.com'} 
                media={pebble1} 
                media2={pebble2}
-               what={'Designed and created a "brochure" style frontend for Pebble.  Server interaction via FTP.'}
+               what={'Designed and created a "brochure" style frontend for Pebble. Ongoing  Server interaction via FTP.'}
                how={'React.js, vanilla CSS3, mobile responsive.' }
                url={'https://www.pebblesolutions.com'}
                />
@@ -59,6 +58,12 @@ export default function ProjectsContainer() {
             />
          </div>
    
+         <div className="not-a-flex">
+            <img src={arrow3} alt="" className="nav-arrow"/>   
+            Scroll
+         </div>
+         
+         
       </div>
    )
 }

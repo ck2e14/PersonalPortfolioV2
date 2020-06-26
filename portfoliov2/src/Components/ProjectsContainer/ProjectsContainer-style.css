@@ -3,7 +3,6 @@
    flex-direction: row;
    height: 95%;
    max-width: 44vw;
-   /* border: 2px solid green; */
    padding-left: 5%;
    overflow-x: scroll;
    overflow-y: visible !important;
@@ -16,10 +15,35 @@
 }
 
 .projects-flex-item {
-   /* border: 2px solid white; */
    flex: 1;
    min-width: 44vw;
    margin-right: 10%;
 
 
 }
+
+.not-a-flex {
+   top: 45%;
+   font-size: 22px;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   color: rgb(116, 116, 116);
+
+}
+
+.not-a-flex:hover {
+   color: rgb(116, 116, 116);
+   font-weight: bold;
+}
+
+.nav-arrow {
+   /* position: fixed; */
+   max-height: 50px;
+   min-height: 45px;
+   z-index: 999;
+   filter: invert(55%);
+}
+
