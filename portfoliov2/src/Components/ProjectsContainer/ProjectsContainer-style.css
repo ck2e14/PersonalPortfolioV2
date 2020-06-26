@@ -25,25 +25,28 @@
 .not-a-flex {
    top: 44%;
    font-size: 22px;
-   position: fixed;
+   position: absolute;
    display: flex;
    align-items: center;
    justify-content: center;
    font-weight: bold;
-   color: rgb(116, 116, 116);
+   color: rgb(255, 255, 255);
 
+   z-index: 9999999999;
+   transition: all .25s;
 }
 
 .not-a-flex:hover {
-   color: rgb(116, 116, 116);
    font-weight: bold;
 }
 
 .nav-arrow {
-   /* position: fixed; */
-   max-height: 50px;
-   min-height: 45px;
+   clear: both;
+   position: fixed;
+   max-height: 25px;
+   min-height: 25px;
+   position: relative;
    z-index: 999;
-   filter: invert(55%);
+   filter: invert(85%);
 }
 
