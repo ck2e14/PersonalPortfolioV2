@@ -57,13 +57,17 @@ function App() {
     setAboutIsActive(false);
   }
 
+  const aboutCTAContact = () => {
+    setContactIsActive(true);
+  }
+
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(true)
-    },500);
+    },250);
     setTimeout(() => {
       setSlideShowRendered(true)
-    }, 2000);
+    }, 1500);
   },[])
 
   return (
@@ -96,13 +100,14 @@ function App() {
           </div>    
           
           <div className="app-grid-square sq-1 hvr-ripple-out"
-          onClick={handleAboutClick} >
+          
+          >
             { !aboutIsActive ? 
               <div className="card-title-text"
                 onClick={handleAboutClick} >
                ABOUT 
             </div> 
-          : <AboutCard /> }
+          : <AboutCard cta={aboutCTAContact}/> }
           </div>    
           
           <div className="app-grid-square sq-4"

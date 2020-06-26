@@ -23,7 +23,7 @@
 }
 
 .not-a-flex {
-   top: 44%;
+   top: 95%;
    font-size: 22px;
    position: absolute;
    display: flex;
@@ -48,5 +48,9 @@
    position: relative;
    z-index: 999;
    filter: invert(85%);
+   transition: all .25s;
 }
 
+.not-a-flex:hover > .nav-arrow {
+   transform: translateX(20%);
+}

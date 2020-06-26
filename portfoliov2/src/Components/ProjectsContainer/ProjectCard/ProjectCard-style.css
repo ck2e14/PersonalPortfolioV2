@@ -128,7 +128,7 @@
    }
 }
 
- @keyframes fade-in {
+@keyframes fade-in {
    0% {
      opacity: 0;
    }
@@ -170,8 +170,9 @@
      -webkit-animation-timing-function: ease-out;
              animation-timing-function: ease-out;
    }
- }
- @keyframes heartbeat {
+}
+
+@keyframes heartbeat {
    from {
      -webkit-transform: scale(1);
              transform: scale(1);
@@ -204,5 +205,5 @@
      -webkit-animation-timing-function: ease-out;
              animation-timing-function: ease-out;
    }
- }
+}
  

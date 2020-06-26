@@ -2,7 +2,7 @@
    position: relative;  
    height: 80%;
    width: 85%;
-   top: -0%;
+   top: 20%;
    display: flex; 
    justify-content: center;
    flex-direction: column;
@@ -22,7 +22,7 @@
    text-transform: uppercase;
    margin-top: 1%;
    padding: 2%;
-   transition: all .25s;
+   transition: all 1s;
 }
 
 ::-webkit-full-page-media, _:future, :root .linked-in-link {
@@ -36,7 +36,7 @@
    height: 6vh;
    background-color: black;
    animation: none !important;
-   transition: all .5s;
+   transition: all .25s;
    border-radius:5px;
 }
 
@@ -54,7 +54,7 @@
    text-align: right;
    text-align: center;
    color: grey;
-   transition: all 5s;
+   /* transition: all 5s; */
    opacity: 0;
    -webkit-animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
    animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -69,7 +69,7 @@
   visibility: visible;
   -webkit-animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation-delay: .35s;  
+  animation-delay: .25s;  
 
 }
 
