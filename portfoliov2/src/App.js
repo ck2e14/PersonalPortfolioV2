@@ -75,7 +75,8 @@ function App() {
         { slideShowRendered ? 
         <div className="app-grid-container">
           <div className="app-grid-square sq-2" 
-          onMouseEnter={handleProjectsHover} >
+          onMouseEnter={handleProjectsHover} 
+          onClick={handleProjectsClick}>
             { !projectsIsActive ? 
               <div className="card-title-text" 
                 onClick={handleProjectsClick} >
@@ -94,7 +95,8 @@ function App() {
           : <ResumeContainer /> }
           </div>    
           
-          <div className="app-grid-square sq-1 hvr-ripple-out">
+          <div className="app-grid-square sq-1 hvr-ripple-out"
+          onClick={handleAboutClick} >
             { !aboutIsActive ? 
               <div className="card-title-text"
                 onClick={handleAboutClick} >
@@ -103,7 +105,8 @@ function App() {
           : <AboutCard /> }
           </div>    
           
-          <div className="app-grid-square sq-4">
+          <div className="app-grid-square sq-4"
+           onClick={handleContactClick}>
             { !contactIsActive ? 
               <div className="card-title-text" 
                 onClick={handleContactClick} >
