@@ -14,7 +14,7 @@ export default function ProjectsContainer() {
       <div className='projects-wrapper-flex'>
 
          <div className="projects-flex-item">
-            <ProjectCard 
+            <ProjectCard  
                projectName={'PebbleSolutions'} 
                media={pebble1} 
                media2={pebble2}

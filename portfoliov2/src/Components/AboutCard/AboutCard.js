@@ -7,7 +7,7 @@ export default function AboutCard(props) {
          
          <div className="about-card-flex-item flex-start-elem">
              I AM →
-            <span> Chris Kennedy, fullstack web developer</span>
+            <span> a fullstack web developer</span>
            
          </div>      
 

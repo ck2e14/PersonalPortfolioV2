@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
 
-  background-image: linear-gradient(to bottom, rgba(67, 190, 180, 0.644), rgb(61, 143, 105));
+  background-image: linear-gradient(to bottom, rgb(79, 163, 121), rgb(127, 85, 138));
   background-position: top;
   background-size: cover;
   align-items: center;
