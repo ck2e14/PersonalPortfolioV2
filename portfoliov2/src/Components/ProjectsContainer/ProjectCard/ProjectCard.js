@@ -17,10 +17,6 @@ export default function ProjectCard(props) {
       }, 2000)
    }
 
-   // const flipCardWithClick = () => {
-   //    setShowFront(false)
-   // }
-
    const iconClickHandler = () => {
       setShowFront(!showFront);
       flickBackgroundimage();
@@ -29,7 +25,7 @@ export default function ProjectCard(props) {
    return (
       <div className='card-wrapper'>
 
-         {showFront ?  
+         { showFront ?  
 
             <div className="card-front" >
                
@@ -38,12 +34,8 @@ export default function ProjectCard(props) {
                   src={infoIcon} alt="" 
                   className="return-icon" />
 
-               { changeBackground ? 
                   <img src={props.media} alt="" onMouseLeave={flickBackgroundimage} onMouseEnter={flickBackgroundimage} onMouseMove={flickBackgroundimage} className="backdrop-card-front"/>
-               :
-                  <img src={props.media2} onMouseEnter={flickBackgroundimage}  onMouseLeave={flickBackgroundimage} onMouseMove={flickBackgroundimage} alt="" className="backdrop-card-front"/>
-              }
-
+         
                   <div className="project-name">
                      {props.projectName}
                   </div>
@@ -68,15 +60,27 @@ export default function ProjectCard(props) {
                      {props.how}
                   </div>
                   
-                  <div className="card-back-flex-item project-link-wrapper">
-                     <a target="_blank" rel="noopener noreferrer" href={props.url} className="project-link">
-                        Visit {props.projectName}
-                     </a>
-                  </div>
+                  { props.isHosted ?   
+                     <div className="card-back-flex-item project-link-wrapper">
+                        <a target="_blank" rel="noopener noreferrer" href={props.url} className="project-link">
+                           Visit {props.projectName}
+                        </a>
+                     </div>
+                  : 
+                     <div className="card-back-flex-item project-link-wrapper">
+                        <a target="_blank" rel="noopener noreferrer" href={props.url} className="project-link">
+                           View {props.projectName} on GitHub
+                        </a>
+                     </div>
+                  }
+                  
+                 
 
                </div>
          </div>
- }
+         
+         }
+      
       </div>
    )
 }

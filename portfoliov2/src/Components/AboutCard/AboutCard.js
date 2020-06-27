@@ -6,8 +6,8 @@ export default function AboutCard(props) {
       <div className='about-card-wrapper-flex'>
          
          <div className="about-card-flex-item flex-start-elem">
-             I AM →
-            <span> a fullstack web developer</span>
+             I AM A →
+            <span>  fullstack web developer</span>
            
          </div>      
 
@@ -23,7 +23,7 @@ export default function AboutCard(props) {
          <div className="about-card-flex-item about-card-flex-items3"
             onClick={() => props.cta()}
          >
-            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. To contact me about a bespoke, promptly delivered and responsive site like this one, click here</span></div>
+            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. To find out about getting a bespoke, promptly delivered and responsive site like this one, click here</span></div>
          
       </div>
    )

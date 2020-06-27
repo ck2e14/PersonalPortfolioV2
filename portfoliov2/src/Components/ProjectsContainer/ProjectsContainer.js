@@ -1,4 +1,5 @@
 import React from 'react';
+import coronavirus from '../../Assets/banner.jpg'
 import ProjectCard from './ProjectCard/ProjectCard.js';
 import './ProjectsContainer-style.css';
 import pebble1 from '../../Assets/pebble1.png';
@@ -15,9 +16,9 @@ export default function ProjectsContainer() {
 
          <div className="projects-flex-item">
             <ProjectCard  
-               projectName={'PebbleSolutions'} 
-               media={pebble1} 
-               media2={pebble2}
+               projectName={'Pebble Solutions'} 
+               media={pebble2}
+               isHosted={true}
                what={'Designed and created a "brochure" style frontend for Pebble. Ongoing site maintenance and updates via FTP.'}
                how={'React.js, vanilla CSS3, mobile responsive.' }
                url={'https://www.pebblesolutions.com'}
@@ -27,8 +28,8 @@ export default function ProjectsContainer() {
          <div className="projects-flex-item">
             <ProjectCard 
                projectName={'MapStar'} 
+               isHosted={false}
                media={mapstar} 
-               media2={mapstar}
                what={'Google API-led route manager and directions service.'}
                how={'Async Ajax, React.js, JWT-Authentication, CSS3, Rails API'}
                url={'https://github.com/ck2e14/Mod4Project'}
@@ -37,24 +38,35 @@ export default function ProjectsContainer() {
          
          <div className="projects-flex-item">
             <ProjectCard 
-            projectName={'eXchange'} 
-            media={exchange} 
-            media2={exchange}
-            what={'Currency exchange rate calculator. Rates pulled live from exchangeratesapi.io upon page load.'}
-            how={'React.js, Ajax JavaScript, vanilla CSS3'}
-            url={'https://practical-goldstine-fa44e5.netlify.app/'}
+               projectName={'eXchange'} 
+               isHosted={true}
+               media={exchange} 
+               what={'Currency exchange rate calculator. Rates pulled live from exchangeratesapi.io upon page load.'}
+               how={'React.js, Ajax JavaScript, vanilla CSS3'}
+               url={'https://practical-goldstine-fa44e5.netlify.app/'}
             />
 
          </div>  
 
          <div className="projects-flex-item">
             <ProjectCard 
-            projectName={'Hygenik'} 
-            media={hygenik3} 
-            media2={hygenik}
-            what={'Locations services-led app that reveals FSA hygiene ratings and information for nearby food-serving premises. Can blacklist sites.'}
-            how={'React.js, Async Ajax JavaScript, CSS3, JWT-Authentication, Rails API backend'}
-            url={'https://github.com/ck2e14/frontend5'}
+               projectName={'Hygenik'} 
+               isHosted={false}
+               media={hygenik3} 
+               what={'Locations services-led app that reveals FSA hygiene ratings and information for nearby food-serving premises. Can blacklist sites.'}
+               how={'React.js, Async Ajax JavaScript, CSS3, JWT-Authentication, Rails API backend'}
+               url={'https://github.com/ck2e14/frontend5'}
+            />
+         </div>
+
+         <div className="projects-flex-item">
+            <ProjectCard 
+               projectName={'Coro-nah-virus!'} 
+               isHosted={false}
+               media={coronavirus} 
+               what={"Google Chrome extension. Recursively searches through a website's HTML elements and black-box censors 'coronavirus' and 'COVID-19'. Because why not!"}
+               how={'JavaScript, Regex, CSS'}
+               url={'https://github.com/ck2e14/Coro-nah-virus'}
             />
          </div>
    
@@ -62,7 +74,6 @@ export default function ProjectsContainer() {
          SCROLL
             <img src={arrow3} alt="" className="nav-arrow"/>   
          </div>
-         
          
       </div>
    )
