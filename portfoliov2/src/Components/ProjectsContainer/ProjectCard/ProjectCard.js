@@ -73,12 +73,8 @@ export default function ProjectCard(props) {
                         </a>
                      </div>
                   }
-                  
-                 
-
                </div>
          </div>
-         
          }
       
       </div>

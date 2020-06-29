@@ -6,7 +6,6 @@ import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
 import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.js';
 import ContactCard from '../src/Components/ContactCard/ContactCard.js';
 
-
 function App() {
 
   const [ aboutIsActive, setAboutIsActive ] = useState(false)
@@ -72,59 +71,59 @@ function App() {
 
   return (
     <>
-       <div className="center-this">
+      <div className="center-this">
 
       { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
 
         { slideShowRendered ? 
-        <div className="app-grid-container">
-          <div className="app-grid-square sq-2" 
-          onMouseEnter={handleProjectsHover} 
-          onClick={handleProjectsClick}>
-            { !projectsIsActive ? 
-              <div className="card-title-text" 
-                onClick={handleProjectsClick} >
-                PROJECTS 
+          <div className="app-grid-container">
+            
+            <div className="app-grid-square sq-2" 
+              onMouseEnter={handleProjectsHover} 
+              onClick={handleProjectsClick}>
+              { !projectsIsActive ? 
+                <div className="card-title-text" 
+                  onClick={handleProjectsClick} >
+                  PROJECTS 
+                </div> 
+            : <ProjectsContainer /> }
+            </div> 
+
+            <div className="app-grid-square sq-3"
+              onClick={handleResumeClick}   
+              onMouseEnter={handleProjectsHover} >
+              { !resumeIsActive ? 
+                <div className="card-title-text">
+                RESUME 
               </div> 
-          : <ProjectsContainer /> }
-          </div> 
+            : <ResumeContainer /> }
+            </div>    
+            
+            <div className="app-grid-square sq-1 hvr-ripple-out">
+              { !aboutIsActive ? 
+                <div className="card-title-text"
+                  onClick={handleAboutClick} >
+                    ABOUT 
+                </div> 
+              : 
+                <AboutCard cta={aboutCTAContact}/> 
+              }
+            </div>    
+            
+            <div className="app-grid-square sq-4"
+              onClick={handleContactClick}>
+              { !contactIsActive ? 
+                <div className="card-title-text" 
+                  onClick={handleContactClick} >
+                    CONTACT 
+                </div> 
+            : 
+              <ContactCard/> }
+            </div> 
 
-          <div className="app-grid-square sq-3"
-            onClick={handleResumeClick}   
-            onMouseEnter={handleProjectsHover} >
-            { !resumeIsActive ? 
-              <div className="card-title-text">
-              RESUME 
-            </div> 
-          : <ResumeContainer /> }
-          </div>    
-          
-          <div className="app-grid-square sq-1 hvr-ripple-out"
-          
-          >
-            { !aboutIsActive ? 
-              <div className="card-title-text"
-                onClick={handleAboutClick} >
-               ABOUT 
-            </div> 
-          : <AboutCard cta={aboutCTAContact}/> }
-          </div>    
-          
-          <div className="app-grid-square sq-4"
-           onClick={handleContactClick}>
-            { !contactIsActive ? 
-              <div className="card-title-text" 
-                onClick={handleContactClick} >
-                CONTACT 
-            </div> 
-          : 
-            <ContactCard/> 
-          }
-        </div> 
-
-      </div>
-      : null }
-     
+        </div>
+      : 
+        null } 
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
       </link>

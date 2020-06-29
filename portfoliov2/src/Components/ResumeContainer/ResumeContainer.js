@@ -6,7 +6,7 @@ export default class ResumeContainer extends Component {
   render() {
     return (
       <div className='resume-wrapper-flex'>
-         <iframe src={file} title='CK-Resume' height='450' width='750' className=""></iframe>
+        <iframe src={file} title='CK-Resume' height='450' width='750' className=""></iframe>
       </div>
     );
   }

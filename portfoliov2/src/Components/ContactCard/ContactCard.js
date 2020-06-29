@@ -10,7 +10,7 @@ export default function ContactCard() {
          <a href="https://www.github.com/ck2e14" target="_blank" rel="noopener noreferrer" className="github-link contact-link">GitHub →  <span>github.com/ck2e14</span></a>
          
          <a href="https://www.linkedin.com/in/christopher-w-kennedy" rel="noopener noreferrer" target="_blank" className="linked-in-link contact-link">LinkedIn  →  <span>linkedin.com/in/christopher-w-kennedy</span></a>
-          
+         
       </div>
    )
 }
