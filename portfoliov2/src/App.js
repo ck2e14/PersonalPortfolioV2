@@ -73,7 +73,7 @@ function App() {
     <>
       <div className="center-this">
 
-      { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
+        { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
 
         { slideShowRendered ? 
           <div className="app-grid-container">
@@ -94,7 +94,7 @@ function App() {
               onMouseEnter={handleProjectsHover} >
               { !resumeIsActive ? 
                 <div className="card-title-text">
-                RESUME 
+                RESUMÉ
               </div> 
             : <ResumeContainer /> }
             </div>    
@@ -121,15 +121,15 @@ function App() {
               <ContactCard/> }
             </div> 
 
-        </div>
-      : 
-        null } 
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-      </link>
+          </div>
+        : 
+          null } 
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        </link>
 
-    </div> 
-    <div className="shader-layer"></div>
+      </div> 
+      <div className="shader-layer"></div>
     </>
   );
 }

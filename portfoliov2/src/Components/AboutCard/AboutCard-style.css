@@ -1,5 +1,4 @@
 .about-card-wrapper-flex {
-
    width: 100%;
    display: flex; 
    align-items: center;
@@ -28,9 +27,7 @@
 
 .about-card-flex-item:hover {
    color: white;
-   /* color: rgb(0, 255, 213); */
    font-weight: bold;
-   /* transform: scale(1.025); */
    height: 8vh;
    border-radius: 20px;
    animation: none !important;
@@ -53,9 +50,7 @@
 }
 
 .about-card-flex-items3:hover {
-   /* color: rgb(0, 255, 213); */
    font-weight: bold;
-   /* transform: scale(1.025); */
    height: 17vh;
    border-radius: 20px;
    animation: none !important;
@@ -64,10 +59,12 @@
    transition: all .5s;
 }
 
-::-webkit-full-page-media, _:future, :root .about-card-flex-items1and2 {
+.about-card-flex-items3:hover > span {
+   font-size: .35em;
+}
 
+::-webkit-full-page-media, _:future, :root .about-card-flex-items1and2 {
    font-size: 2.5vw;
-   
 }
 
 .about-card-flex-item span {
@@ -102,21 +99,20 @@
    opacity: 1;
 }
 
- @-webkit-keyframes fade-in {
+@-webkit-keyframes fade-in {
    0% {
      opacity: 0;
    }
    100% {
      opacity: 1;
    }
- }
+}
 
- @keyframes fade-in {
+@keyframes fade-in {
    0% {
      opacity: 0;
    }
    100% {
      opacity: 1;
    }
- }
- 
+}

@@ -19,10 +19,10 @@ export default function AboutCard(props) {
             I'M LOOKING FOR → <span className="">  Full-time work in front-end web development, particularly with React.js</span>
          </div>          
 
-         <div className="about-card-flex-item about-card-flex-items3"
+         <div className="about-card-flex-item about-card-flex-items3 final-item-about-card"
             onClick={() => props.cta()}
          >
-            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. To find out about getting a bespoke, promptly delivered and responsive site like this one, click here</span></div>
+            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. Click here to contact me about a bespoke, promptly delivered and responsive website</span></div>
          
       </div>
    )
