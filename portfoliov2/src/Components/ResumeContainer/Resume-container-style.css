@@ -1,12 +1,3 @@
-.resume-wrapper-flex {
-   /* min-height: 100%;
-   margin-top: 50%;
-   position: fixed;
-   min-width: 200%;
-   border: 2px solid green; */
-
-}
-
 .resume-pdf {
    position: relative;  
    border: 2px solid white;
@@ -26,12 +17,9 @@
    padding: 1%;
    font-size: 20px;
    position: fixed;
-   /* margin-left: -25vw; */
-   /* border: 2px solid rgb(255, 255, 255); */
 }
 
 .resume-download:hover {
    transform: scale(1.025);
    text-shadow: 1px 1px 5px rgb(0, 255, 255);
-
 }

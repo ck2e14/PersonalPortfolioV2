@@ -8,9 +8,7 @@ export default class ResumeContainer extends Component {
   render() {
     return (
       <>
-        <div className='resume-wrapper-flex'>
-          <iframe src={file} title='CK-Resume' height='850' width='750' className="resume-pdf"></iframe>
-        </div>
+        <iframe src={file} title='CK-Resume' height='850' width='750' className="resume-pdf"></iframe>
         {/* <a href={newFile} className="resume-download">Download ResumÉ</a> */}
       </>
     );
