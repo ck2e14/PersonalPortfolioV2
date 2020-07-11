@@ -1,15 +1,37 @@
 .resume-wrapper-flex {
-   min-height: 100%;
+   /* min-height: 100%;
    margin-top: 50%;
    position: fixed;
    min-width: 200%;
-   border: 2px solid green;
+   border: 2px solid green; */
+
 }
 
 .resume-pdf {
-   position: fixed   ;
+   position: relative;  
    border: 2px solid white;
-   border-radius: 10px !important;
+   border-radius: 30px !important;
    overflow: visible;
-   margin-top: 5% !important;
+   margin-top: 70% !important;
+   z-index: 99999999999999999999;
+
+}
+
+.resume-download {
+   font-family: 'Roboto', sans-serif;
+   text-transform: uppercase !important;
+   transition: all .4s;
+   letter-spacing: .5vw;
+   font-weight: bold !important;;
+   padding: 1%;
+   font-size: 20px;
+   position: fixed;
+   /* margin-left: -25vw; */
+   /* border: 2px solid rgb(255, 255, 255); */
+}
+
+.resume-download:hover {
+   transform: scale(1.025);
+   text-shadow: 1px 1px 5px rgb(0, 255, 255);
+
 }
