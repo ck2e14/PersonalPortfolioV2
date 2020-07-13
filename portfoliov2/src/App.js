@@ -98,7 +98,6 @@ function App() {
             : <ResumeContainer /> }
             </div>    
 
-            {/* FIXME: CHANGE CLICK HANDLING TO SQUARE NOT LINE OF TEXT */}
             <div className="app-grid-square sq-1 hvr-ripple-out" onClick={handleAboutClick}>
               { !aboutIsActive ? 
                 <div className="card-title-text"

@@ -23,6 +23,7 @@
    margin-top: 1%;
    padding: 2%;
    transition: all 1s;
+   border-radius: 10px !important;
 }
 
 ::-webkit-full-page-media, _:future, :root .linked-in-link {

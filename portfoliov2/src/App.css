@@ -13,7 +13,6 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-
   background-image: linear-gradient(to bottom, rgb(173, 197, 118), rgb(79, 184, 119));
   background-position: top;
   background-size: cover;
@@ -49,29 +48,23 @@
   overflow: clip;
 }
 
-.app-grid-square:hover {
-
-  /* position: fixed; */
-}
-
 .card-title-text {
   z-index: 999;
   color: rgb(73, 73, 73);
   font-size: 2vw;
   font-weight: bold !important;
-  /* background: rgba(0, 0, 0, 0.438); */
+  text-shadow: 2px 2px 2px rgb(75, 75, 75);
   border-radius:5px;
   padding-top: .5%;
   padding-bottom: .5%;
-  /* padding-left: .5%; */
   letter-spacing: .5vw;
-  transition: margin-top .25s, font-size .5s, color .5s, text-shadow .5s, letter-spacing .5s;
+  transition: margin-top .25s, font-size .5s, color .5s, text-shadow .25s, letter-spacing .5s;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .card-title-text:hover {
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .app-grid-square:hover > .card-title-text {
