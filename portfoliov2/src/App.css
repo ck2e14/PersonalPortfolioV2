@@ -65,12 +65,13 @@
 
 .card-title-text:hover {
   cursor: pointer; 
+  letter-spacing: .8vw;
+  color: rgb(255, 255, 255);
+
 }
 
 .app-grid-square:hover > .card-title-text {
   z-index: 999;
-  color: rgb(255, 255, 255);
-  letter-spacing: 1.25vw;
 }
 
 .logo-central {
@@ -82,7 +83,7 @@
   animation-delay: .5s;
   opacity: .99;
   transition: all .25s;
-  /* z-index: 99999999; */
+  z-index: 1  ;
   background-color: none !important ;
   cursor: pointer;
 }

@@ -59,6 +59,13 @@ function App() {
     setContactIsActive(true);
   }
 
+  const escFunction = () => {
+    setAboutIsActive(false);
+    setContactIsActive(false);
+    setResumeIsActive(false);
+    setProjectsIsActive(false);
+  }
+
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(true)
@@ -66,6 +73,11 @@ function App() {
     setTimeout(() => {
       setSlideShowRendered(true)
     }, 1500);
+    document.addEventListener("keydown", escFunction);
+
+    return function cleanup() {
+      document.removeEventListener("keydown", escFunction);
+    }
   },[])
 
   return (
@@ -79,7 +91,7 @@ function App() {
             
             <div className="app-grid-square sq-2" 
               onMouseEnter={handleProjectsHover} 
-              onClick={handleProjectsClick}>
+              >
               { !projectsIsActive ? 
                 <div className="card-title-text" 
                   onClick={handleProjectsClick} >
@@ -98,7 +110,7 @@ function App() {
             : <ResumeContainer /> }
             </div>    
 
-            <div className="app-grid-square sq-1 hvr-ripple-out" onClick={handleAboutClick}>
+            <div className="app-grid-square sq-1 hvr-ripple-out"  >
               { !aboutIsActive ? 
                 <div className="card-title-text"
                   onClick={handleAboutClick} >
@@ -123,6 +135,7 @@ function App() {
           </div>
         : 
           null } 
+          
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         </link>
