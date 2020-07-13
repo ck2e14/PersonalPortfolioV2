@@ -5,6 +5,7 @@
    max-width: 44vw;
    padding-left: 5%;
    overflow-x: scroll;
+   z-index: 99;
    overflow-y: visible !important;
    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

@@ -50,16 +50,20 @@ function App() {
     setResumeIsActive(false);
   }
 
-  const handleProjectsHover = () => {
-    setContactIsActive(false);
-    setAboutIsActive(false);
-  }
-
   const aboutCTAContact = () => {
     setContactIsActive(true);
   }
 
-  const escFunction = () => {
+  const escFunction = (event) => {
+    if(event.keyCode === 27) {
+      setAboutIsActive(false);
+      setContactIsActive(false);
+      setResumeIsActive(false);
+      setProjectsIsActive(false);
+    }
+  }
+
+  const clickEsc = () => {
     setAboutIsActive(false);
     setContactIsActive(false);
     setResumeIsActive(false);
@@ -74,7 +78,6 @@ function App() {
       setSlideShowRendered(true)
     }, 1500);
     document.addEventListener("keydown", escFunction);
-
     return function cleanup() {
       document.removeEventListener("keydown", escFunction);
     }
@@ -82,6 +85,8 @@ function App() {
 
   return (
     <>
+    <div className="top-bar" onClick={() => clickEsc()}>ESC/click here to close panels</div>
+    <div className="bot-bar">Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | SQLite/NoSQl/PostgreSQL | CD/CI | Git   </div>
       <div className="center-this">
 
         { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }

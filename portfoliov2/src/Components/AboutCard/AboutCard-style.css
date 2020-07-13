@@ -1,7 +1,7 @@
+
 .about-card-wrapper-flex {
    width: 100%;
    display: flex; 
-   align-items: center;
    flex-direction: column;
    padding: 2%;
    overflow: visible;
@@ -14,60 +14,20 @@
    transition: all .2s;
    color: rgb(105, 105, 105);
    font-size: 3vw;
-   width: 96%;
+   width: 60%;
    z-index: 99999999999999999999999999999999;
    height: 6vh;
    margin-top: 1%;
    background: rgb(70, 70, 70);
    font-weight: bold;
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    padding: 2%;
-   transition: all .5s; 
+   transition: all .4s !important;
    border-radius: 10px !important;
 }
 
-.about-card-flex-item:hover {
-   color: white;
-   font-weight: bold;
-   height: 8vh;
-   border-radius: 20px;
-   animation: none !important;
-   background: black;
-   transition: all .5s;
-}
 
-.about-card-flex-items1and2:hover {
-   font-weight: bold;
-   height: 12vh;
-   border-radius: 20px;
-   animation: none !important;
-   background: black;
-   border-radius:5px;
-   transition: all .5s;
-}
-
-.about-card-flex-items3:hover {
-   font-weight: bold;
-   height: 14vh;
-   border-radius: 20px;
-   animation: none !important;
-   background: black;
-   border-radius:5px;
-   transition: all .5s;
-}
-
-.about-card-flex-items3:hover > span {
-   font-size: .35em;
-}
-
-::-webkit-full-page-media, _:future, :root .about-card-flex-items3{
-   font-size: 2.7vw;
-}
-
-::-webkit-full-page-media, _:future, :root .about-card-flex-items1and2 {
-   font-size: 2.5vw;
-}
-
+/* card-specific items here */
 .about-card-flex-item span {
    font-size: 1.1vw;
    font-style: italic;
@@ -78,20 +38,95 @@
    opacity: 0;
    white-space: normal;
    display: none;
-   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-   animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.about-card-flex-item:hover {
+   color: white;
+   font-weight: bold;
+   height: 8vh;
+   width: 99%;
+   border-radius: 20px;
+   animation: none !important;
+   background: black;
+   height: 12vh;
+   font-size: 2vw;
 }
 
 .about-card-flex-item:hover > span {
-   color: rgb(223, 41, 41);
-   color: rgb(0, 255, 255);
+   color: rgb(255, 255, 255);
    visibility: visible;
    opacity: 1;
    display: inline;
    -webkit-animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
    animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-   animation-delay: .2s;
+   animation-delay: .3s;
 }
+
+.about-card-flex-items1and2:hover {
+   font-weight: bold;
+   height: 12vh;
+   border-radius: 20px;
+   animation: none !important;
+   background: black;
+   border-radius:5px;
+   transition: height .5s, font-size .5s;
+   font-size: 2vw !important;
+}
+
+.about-card-flex-items2:hover {
+   height: 8vh;
+}
+
+.about-card-flex-items3:hover {
+   font-weight: bold;
+   height: 14vh;
+   border-radius: 20px;
+   animation: none !important;
+   background: black;
+   border-radius:5px;
+   font-size: 2vw !important;
+   transition: all .5s;
+} 
+
+.about-card-flex-items3:hover > span {
+   /* font-size: 1vw; */
+}
+
+.flex-start-elem:hover {
+   height: 9vh;
+   font-size: 2vw;;
+   transition: all .25s ease;
+}
+
+.final-item-about-card:hover {
+   height: 8vh
+}
+
+/* SAFARI MANAGEMENT GRRRR */
+::-webkit-full-page-media, _:future, :root .flex-start-elem:hover {
+   font-size: 3vw !important;
+   height: 17vh;
+}
+
+::-webkit-full-page-media, _:future, :root .about-card-flex-item:hover {
+   font-size: 3vw !important;
+}
+
+::-webkit-full-page-media, _:future, :root .about-card-flex-items1and2:hover {
+   font-size: 3vw !important;
+   height: 18vh;
+}
+
+::-webkit-full-page-media, _:future, :root .about-card-flex-items1:hover {
+   font-size: 3vw !important;
+   height: 23vh;
+}
+
+::-webkit-full-page-media, _:future, :root .final-item-about-card:hover {
+   height: 17vh
+}
+/* SAFARI MANAGEMENT ENDS HERE GRRR */
+/* card-specific items end here */
 
 .tiny-text {
    font-size: .5vw;
@@ -100,8 +135,7 @@
 }
 
 .contactCTA {
-   font-size: 25px !important;
-   color: rgb(0, 255, 0) !important;
+   color: rgb(0, 251, 255) !important;
    cursor: pointer;
 }
 
