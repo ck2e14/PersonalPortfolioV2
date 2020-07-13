@@ -7,7 +7,6 @@ import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.
 import ContactCard from '../src/Components/ContactCard/ContactCard.js';
 
 function App() {
-
   const [ aboutIsActive, setAboutIsActive ] = useState(false)
   const [ resumeIsActive, setResumeIsActive ] = useState(false)
   const [ contactIsActive, setContactIsActive ] = useState(false)
@@ -98,9 +97,9 @@ function App() {
               </div> 
             : <ResumeContainer /> }
             </div>    
-            
+
             {/* FIXME: CHANGE CLICK HANDLING TO SQUARE NOT LINE OF TEXT */}
-            <div className="app-grid-square sq-1 hvr-ripple-out">
+            <div className="app-grid-square sq-1 hvr-ripple-out" onClick={handleAboutClick}>
               { !aboutIsActive ? 
                 <div className="card-title-text"
                   onClick={handleAboutClick} >
