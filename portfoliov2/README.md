@@ -1,3 +1,5 @@
-Portfolio of Chris Kennedy: projects, skills and resume.
+Personal portfolio: projects, skills and resume.
+ 
+This site is hosted at 
+chriskennedy.live
 
-This site is hosted at chriskennedy.live
