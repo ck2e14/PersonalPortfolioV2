@@ -20,22 +20,24 @@
   padding: 1%;
   height: 3vh;
   font-size: 1.5vw;
-  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
   animation-delay: 2s;
 }
 
 .top-bar{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 255, 255);
   position: absolute;
   z-index: 9;
   top: 1%;
-  right: 0;
+  right: 1%;
   font-weight: 1000;
   padding: .5%;
+  padding-left: 1%;
+  padding-right: 1%;
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0);
-  font-size: .85vw;
+  font-size: 2vw;
   transition: all .25s;
   animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation-delay: 2s;
@@ -84,32 +86,30 @@
   align-items: center;
   font-weight: bold; 
   font-size: 3em; 
-  overflow: clip;
 }
 
 .card-title-text {
-  z-index: 999;
   color: rgb(139, 139, 139);
   font-size: 2vw;
   font-weight: bold !important;
-  border-radius:5px;
+  border-radius: 5px;
   padding-top: .5%;
   padding-bottom: .5%;
   letter-spacing: .5vw;
   transition: margin-top .25s, font-size .5s, color .5s, text-shadow .25s, letter-spacing .5s, text-shadow .2s;
-  -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  /* -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530); */
+  /* animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530); */
 }
 
 .card-title-text:hover {
   cursor: pointer; 
   letter-spacing: .65vw;
-  color: rgb(207, 207, 207);
-  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  /* color: rgb(207, 207, 207); */
+  /* text-shadow: 1px 1px 10px rgb(0, 0, 0); */
 }
 
-.app-grid-square:hover > .card-title-text {
-  z-index: 999;
+.sq-4 {
+  z-index: 1;
 }
 
 .logo-central {

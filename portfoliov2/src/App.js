@@ -85,7 +85,7 @@ function App() {
 
   return (
     <>
-    <div className="top-bar" onClick={() => clickEsc()}>ESC/click to close panels</div>
+    <div className="top-bar" onClick={() => clickEsc()}>X</div>
     <div className="bot-bar">
       Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | SQLite/NoSQl/PostgreSQL | CD/CI | Git   
     </div>
@@ -110,8 +110,8 @@ function App() {
               onClick={handleResumeClick} >
               { !resumeIsActive ? 
                 <div className="card-title-text">
-                RESUMÉ
-              </div> 
+                  RESUMÉ  
+                </div> 
             : <ResumeContainer /> }
             </div>    
 
