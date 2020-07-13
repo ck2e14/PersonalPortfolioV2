@@ -31,9 +31,16 @@
    justify-content: center;
    font-weight: bold;
    color: rgb(255, 255, 255);
-
-   z-index: 9999999999;
+   z-index: 99999999999999999999 !important;
    transition: all .25s;
+}
+
+::-webkit-full-page-media, _:future, :root .not-a-flex {
+   top: 75%;
+   left: 10%;
+   background: black;
+   font-weight: bold;
+   pointer-events: none;
 }
 
 .not-a-flex:hover {
@@ -46,11 +53,11 @@
    max-height: 25px;
    min-height: 25px;
    position: relative;
-   z-index: 999;
-   filter: invert(85%);
-   transition: all .25s;
+   z-index: 9999999999999999999999999 !important;
+   filter: invert(45%);
+   transition: all .5s;
 }
 
 .not-a-flex:hover > .nav-arrow {
-   transform: translateX(20%);
+   transform: translateX(20%) scale(1.2);
 }

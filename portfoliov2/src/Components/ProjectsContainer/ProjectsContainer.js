@@ -2,12 +2,10 @@ import React from "react";
 import coronavirus from "../../Assets/banner.jpg";
 import ProjectCard from "./ProjectCard/ProjectCard.js";
 import "./ProjectsContainer-style.css";
-// import pebble1 from "../../Assets/pebble1.png";
 import pebble2 from "../../Assets/pebble2.png";
 import arrow3 from "../../Assets/arrow3.png";
 import exchange from "../../Assets/eXchange.png";
 import mapstar from "../../Assets/mapstar.png";
-// import hygenik from "../../Assets/hygenik.png";
 import hygenik3 from "../../Assets/hygenik3.png";
 
 export default function ProjectsContainer() {

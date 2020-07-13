@@ -12,7 +12,7 @@ export default function AboutCard(props) {
 
          <div className="about-card-flex-item about-card-flex-items1and2">
             I WORK WITH →  
-            <span>  JavaScript (Async, ES6) React.js, Ruby on Rails, HTML5, CSS3 <sup className='tiny-text'>(mobile responsive).</sup></span>
+            <span>  JavaScript (Async, ES6) React.js (Hooks, Router, Redux), Ruby on Rails, HTML5, CSS3 <sup className='tiny-text'>(mobile responsive).</sup></span>
          </div>          
 
          <div className="about-card-flex-item about-card-flex-items1and2">
@@ -21,7 +21,7 @@ export default function AboutCard(props) {
 
          <div className="about-card-flex-item about-card-flex-items3 final-item-about-card"
          onClick={() => props.cta()}>
-            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. Click here to contact me about a bespoke, promptly delivered and responsive website</span>
+            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. For a bespoke, promptly delivered and responsive website by clicking </span><span className="contactCTA"> HERE</span>
          </div>
          
       </div>
