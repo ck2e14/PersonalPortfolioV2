@@ -31,13 +31,13 @@
 }
 
 .contact-link:hover {
-   color: rgb(255, 255, 255);
+   color: rgb(0, 255, 251);
    font-weight: bold;
    width: 39vw;
    height: 6vh;
    background-color: black;
    animation: none !important;
-   transition: all .25s;
+   transition: all .3s;
    border-radius:5px;
 }
 
@@ -64,14 +64,17 @@
 
 .contact-link:hover > span {
    color: rgb(223, 41, 41);
-  color: rgb(0, 255, 255);
+  color: rgb(255, 255, 255);
   opacity: 1;
   display: inline;
   visibility: visible;
   -webkit-animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation-delay: .25s;  
+  animation-delay: .15s;  
+}
 
+.linked-in-link:hover > span {
+   animation-delay: .25s !important;
 }
 
 @-webkit-keyframes fade-in {
@@ -91,4 +94,3 @@
      opacity: 1;
    }
 }
- 

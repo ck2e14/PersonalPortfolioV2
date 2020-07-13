@@ -86,7 +86,10 @@ function App() {
   return (
     <>
     <div className="top-bar" onClick={() => clickEsc()}>ESC/click here to close panels</div>
-    <div className="bot-bar">Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | SQLite/NoSQl/PostgreSQL | CD/CI | Git   </div>
+    <div className="bot-bar">
+      Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | SQLite/NoSQl/PostgreSQL | CD/CI | Git   
+    </div>
+    
       <div className="center-this">
 
         { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
@@ -112,7 +115,7 @@ function App() {
             : <ResumeContainer /> }
             </div>    
 
-            <div className="app-grid-square sq-1 hvr-ripple-out"  >
+            <div className="app-grid-square sq-1" >
               { !aboutIsActive ? 
                 <div className="card-title-text"
                   onClick={handleAboutClick} >
@@ -143,6 +146,7 @@ function App() {
         </link>
 
       </div> 
+
       <div className="shader-layer"></div>
     </>
   );

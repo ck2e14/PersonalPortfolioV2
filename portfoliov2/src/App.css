@@ -42,8 +42,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  /* background-image: linear-gradient(to right, rgb(170, 236, 233), rgb(78, 194, 169)); */
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(19, 19, 19);
   background-position: top;
   background-size: cover;
   align-items: center;
@@ -79,10 +78,10 @@
 
 .card-title-text {
   z-index: 999;
-  color: rgb(73, 73, 73);
+  color: rgb(206, 206, 206);
   font-size: 2vw;
   font-weight: bold !important;
-  text-shadow: 2px 2px 2px rgb(75, 75, 75);
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
   border-radius:5px;
   padding-top: .5%;
   padding-bottom: .5%;
@@ -95,7 +94,7 @@
 .card-title-text:hover {
   cursor: pointer; 
   letter-spacing: .8vw;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 255, 255);
 
 }
 
@@ -106,7 +105,7 @@
 .logo-central {
   position: fixed;
   height: 20%;
-  left: 45%;
+  left: 43.5%;
   -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   animation-delay: .5s;
@@ -114,11 +113,6 @@
   transition: all .25s; 
   background-color: none !important ;
   cursor: pointer;
-}
-
-.logo-central:hover {
-  height: 21%;
-  left: 44.75%;
 }
 
 .shader-layer {
