@@ -11,6 +11,7 @@ import hygenik3 from "../../Assets/hygenik3.png";
 export default function ProjectsContainer() {
   return (
     <div className='projects-wrapper-flex'>
+
       <div className='projects-flex-item'>
         <ProjectCard
           projectName={"Pebble Solutions"}
@@ -82,6 +83,7 @@ export default function ProjectsContainer() {
         SCROLL
         <img src={arrow3} alt='' className='nav-arrow' />
       </div>
+   
     </div>
   );
 }

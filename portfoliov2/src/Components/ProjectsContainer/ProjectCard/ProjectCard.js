@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './ProjectCard-style.css';
-// import CardCarousel from './CardCarousel/CardCarousel'
-// import returnIcon from '../../../Assets/return.png';
 import returnIcon2 from '../../../Assets/return2.png';
-// import returnIcon3 from '../../../Assets/return3.png';
 import infoIcon from '../../../Assets/info.png';
 
 export default function ProjectCard(props) {

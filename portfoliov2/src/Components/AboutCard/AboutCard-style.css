@@ -37,9 +37,7 @@
 }
 
 .about-card-flex-items1and2:hover {
-   /* color: rgb(0, 255, 213); */
    font-weight: bold;
-   /* transform: scale(1.025); */
    height: 12vh;
    border-radius: 20px;
    animation: none !important;
