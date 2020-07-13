@@ -73,10 +73,10 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(true)
-    },250);
+    }, 250);
     setTimeout(() => {
       setSlideShowRendered(true)
-    }, 1500);
+    }, 750);
     document.addEventListener("keydown", escFunction);
     return function cleanup() {
       document.removeEventListener("keydown", escFunction);
@@ -85,7 +85,7 @@ function App() {
 
   return (
     <>
-    <div className="top-bar" onClick={() => clickEsc()}>ESC/click here to close panels</div>
+    <div className="top-bar" onClick={() => clickEsc()}>ESC/click to close panels</div>
     <div className="bot-bar">
       Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | SQLite/NoSQl/PostgreSQL | CD/CI | Git   
     </div>
@@ -101,7 +101,7 @@ function App() {
               { !projectsIsActive ? 
                 <div className="card-title-text" 
                   onClick={handleProjectsClick} >
-                  PROJECTS 
+                  PROJECTS/COMMERCIAL
                 </div>  
             : <ProjectsContainer /> }
             </div> 
@@ -119,7 +119,7 @@ function App() {
               { !aboutIsActive ? 
                 <div className="card-title-text"
                   onClick={handleAboutClick} >
-                    ABOUT 
+                    ABOUT ME
                 </div> 
               : 
                 <AboutCard cta={aboutCTAContact}/> 

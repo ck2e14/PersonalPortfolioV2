@@ -7,10 +7,10 @@ const file ='https://u.pcloud.link/publink/show?code=XZxUpNkZaPiedYge8euVe3mMTPa
 export default class ResumeContainer extends Component {
   render() {
     return (
-      <>
+      <div className="resume-wrapper-top-level">
         <iframe src={file} title='CK-Resume' height='850' width='750' className="resume-pdf"></iframe>
         {/* <a href={newFile} className="resume-download">Download ResumÉ</a> */}
-      </>
+      </div>
     );
   }
 }

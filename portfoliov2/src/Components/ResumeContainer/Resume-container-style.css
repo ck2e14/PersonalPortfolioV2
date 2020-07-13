@@ -4,8 +4,7 @@
    border-radius: 30px !important;
    overflow: visible;
    margin-top: 70% !important;
-   z-index: 99999999999999999999;
-
+   z-index: 99999999999999999999999999;
 }
 
 .resume-download {
@@ -17,6 +16,14 @@
    padding: 1%;
    font-size: 20px;
    position: fixed;
+}
+
+.resume-wrapper-top-level {
+   height: 500px;
+   margin-left: -50%;
+   margin-top: -25%;
+   width: 300px;
+   z-index: 99999999999999999999999999999999999 !important;
 }
 
 .resume-download:hover {

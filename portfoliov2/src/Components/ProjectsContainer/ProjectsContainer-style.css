@@ -12,19 +12,33 @@
 }
 
 .projects-wrapper-flex::-webkit-scrollbar {
-   display: none;
+   background: rgb(0, 0, 0);
+   cursor: pointer;
+   border-radius: 10px;
+
+}
+
+.projects-wrapper-flex::-webkit-scrollbar-track {
+   border-radius: 10px;
+   background: rgb(29, 29, 29);
+   cursor: pointer;
+}
+
+/* Handle */
+.projects-wrapper-flex::-webkit-scrollbar-thumb {
+   background: #1ca2ac;
+   cursor: pointer;
+   border-radius: 10px;
 }
 
 .projects-flex-item {
    flex: 1;
    min-width: 44vw;
    margin-right: 10%;
-
-
 }
 
 .not-a-flex {
-   top: 95%;
+   top: 99%;
    font-size: 22px;
    position: absolute;
    display: flex;

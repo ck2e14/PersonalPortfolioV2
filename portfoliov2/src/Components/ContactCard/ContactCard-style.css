@@ -2,7 +2,8 @@
    position: relative;  
    height: 80%;
    width: 85%;
-   top: 20%;
+   top: 0%;
+   left: 5%;
    display: flex; 
    justify-content: center;
    flex-direction: column;
@@ -19,7 +20,7 @@
    height: 6vh;
    background: rgb(70, 70, 70);
    font-weight: bold;
-   text-transform: uppercase;
+   text-transform: uppercase; 
    margin-top: 1%;
    padding: 2%;
    transition: all .5s;
@@ -37,7 +38,7 @@
 .contact-link:hover {
    color: rgb(0, 255, 251);
    font-weight: bold;
-   width: 39vw;
+   width: 36vw;
    height: 6vh;
    background-color: black;
    animation: none !important;
@@ -46,11 +47,11 @@
 }
 
 .email-link:hover {
-   width: 30vw;
+   width: 26vw
 }
 
 .github-link:hover {
-   width: 28vw;
+   width: 25vw;
 }
 
 .contact-link span {
@@ -59,7 +60,7 @@
    text-align: right;
    text-align: center;
    color: grey;
-   /* transition: all 5s; */
+   text-transform: lowercase  ;
    opacity: 0;
    -webkit-animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
    animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
