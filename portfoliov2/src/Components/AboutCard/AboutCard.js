@@ -20,7 +20,7 @@ export default function AboutCard(props) {
          </div>          
 
          <div className="about-card-flex-item about-card-flex-items3 final-item-about-card">
-            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. For a bespoke, responsive and promptly delivered website click</span>
+            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. For a bespoke, responsive and promptly delivered website click </span>
             <span className="contactCTA"  
                onClick={() => props.cta()}>
                   HERE

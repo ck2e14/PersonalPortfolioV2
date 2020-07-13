@@ -89,9 +89,7 @@ function App() {
         { slideShowRendered ? 
           <div className="app-grid-container">
             
-            <div className="app-grid-square sq-2" 
-              onMouseEnter={handleProjectsHover} 
-              >
+            <div className="app-grid-square sq-2" >
               { !projectsIsActive ? 
                 <div className="card-title-text" 
                   onClick={handleProjectsClick} >
@@ -101,8 +99,7 @@ function App() {
             </div> 
 
             <div className="app-grid-square sq-3"
-              onClick={handleResumeClick}   
-              onMouseEnter={handleProjectsHover} >
+              onClick={handleResumeClick} >
               { !resumeIsActive ? 
                 <div className="card-title-text">
                 RESUMÉ
