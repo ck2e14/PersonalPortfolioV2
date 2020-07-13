@@ -6,8 +6,8 @@ export default function AboutCard(props) {
       <div className='about-card-wrapper-flex'>
          
          <div className="about-card-flex-item flex-start-elem">
-            I AM A →
-            <span>  fullstack web developer</span>
+            I AM →
+            <span> a fullstack web developer</span>
          </div>      
 
          <div className="about-card-flex-item about-card-flex-items1and2">
