@@ -85,7 +85,7 @@ function App() {
                 <div className="card-title-text" 
                   onClick={handleProjectsClick} >
                   PROJECTS 
-                </div> 
+                </div>  
             : <ProjectsContainer /> }
             </div> 
 

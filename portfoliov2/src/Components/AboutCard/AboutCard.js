@@ -20,9 +20,9 @@ export default function AboutCard(props) {
          </div>          
 
          <div className="about-card-flex-item about-card-flex-items3 final-item-about-card"
-            onClick={() => props.cta()}
-         >
-            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. Click here to contact me about a bespoke, promptly delivered and responsive website</span></div>
+         onClick={() => props.cta()}>
+            THIS SITE IS → <span>built in JavaScript(ES6), React and vanilla CSS3. Click here to contact me about a bespoke, promptly delivered and responsive website</span>
+         </div>
          
       </div>
    )

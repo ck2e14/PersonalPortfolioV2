@@ -10,17 +10,15 @@ import code6 from '../../Assets/code6.jpg'
 import code7 from '../../Assets/code7.jpg'
 
 const Slideshow = () => {
-    return (
-      <div className="slide-container">
-        <BackgroundSlider
-            images={[ code5, 
-              mbcode, reactPic, code7, code6, code4, mbcode2,
-            ]}
-
-            duration={6} transition={1} 
-            />
-      </div>
-    )
+  return (
+    <div className="slide-container">
+      <BackgroundSlider
+        images={[ code5, mbcode, reactPic, code7, code6, code4, mbcode2,]}
+        duration={6} 
+        transition={1} 
+      />
+    </div>
+  )
 }
- 
+
 export default Slideshow;
