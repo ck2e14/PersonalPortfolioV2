@@ -16,11 +16,11 @@ export default function AboutCard(props) {
          </div>          
 
          <div className="about-card-flex-item about-card-flex-items1and2 about-card-flex-items2">
-            I'M LOOKING FOR → <span className="">  Full-time work in web development, with a preference for front-end with React.js.</span> <span className="highlight-this">I am always keen to take on new challenges with any stack!  </span>
+            I'M LOOKING FOR → <span className="">  Full-time work in web development, particularly front-end with React.js.</span> <span className="highlight-this">I am always keen to take on new challenges with any stack!  </span>
          </div>          
 
          <div className="about-card-flex-item about-card-flex-items3 final-item-about-card">
-            THIS SITE IS → <span>Built in </span><span className="highlight-this">JavaScript(ES6), React</span> <span>and</span> <span className="highlight-this">vanilla CSS3</span><span>. To get in touch about a bespoke, responsive and promptly delivered website to your specifications, click </span>
+            THIS SITE IS → <span>Built in </span><span className="highlight-this">JavaScript(ES6, React.js) </span> <span>and</span> <span className="highlight-this">vanilla CSS3</span><span>. To get in touch about a bespoke, responsive and promptly delivered website to your specifications, click </span>
             <span className="contactCTA"  
                onClick={() => props.cta()}>
                   here.

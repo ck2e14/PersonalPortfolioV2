@@ -13,9 +13,9 @@ const Slideshow = () => {
   return (
     <div className="slide-container">
       <BackgroundSlider
-        images={[ code5, mbcode, reactPic, code7, code6, code4, mbcode2,]}
+        images={[ code5, mbcode, code4]}
         duration={6} 
-        transition={1} 
+        transition={2} 
       />
     </div>
   )

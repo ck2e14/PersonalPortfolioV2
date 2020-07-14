@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo2 from './Assets/logo5.png';
 import './App.css';
 import AboutCard from './Components/AboutCard/AboutCard.js';
+import Carousel from './Components/Carousel/Carousel';
 import ResumeContainer from './Components/ResumeContainer/ResumeContainer.js';
 import ProjectsContainer from './Components/ProjectsContainer/ProjectsContainer.js';
 import ContactCard from '../src/Components/ContactCard/ContactCard.js';
@@ -12,6 +13,7 @@ function App() {
   const [ contactIsActive, setContactIsActive ] = useState(false)
   const [ projectsIsActive, setProjectsIsActive ] = useState(false)
   const [ slideShowRendered, setSlideShowRendered ] = useState(false)
+  const [ renderSlideshow, setRenderSlideshow ] = useState(false)
   const [ showLogo, setShowLogo ] = useState(false)
 
   const handleAboutClick = () => {
@@ -77,6 +79,9 @@ function App() {
     setTimeout(() => {
       setSlideShowRendered(true)
     }, 750);
+    setTimeout(() => {
+      setRenderSlideshow(true)
+    }, 1250)
     document.addEventListener("keydown", escFunction);
     return function cleanup() {
       document.removeEventListener("keydown", escFunction);
@@ -91,6 +96,8 @@ function App() {
     </div>
     
       <div className="center-this">
+  {/* { renderSlideshow ? <Carousel/> : null } */}
+
 
         { showLogo ? <img src={logo2} alt="" className="logo-central" onClick={handleCentralLogoClick}/> : null }
 
@@ -126,8 +133,7 @@ function App() {
               }
             </div>    
             
-            <div className="app-grid-square sq-4"
-              onClick={handleContactClick}>
+            <div className="app-grid-square sq-4">
               { !contactIsActive ? 
                 <div className="card-title-text" 
                   onClick={handleContactClick} >

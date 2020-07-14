@@ -23,9 +23,9 @@
 .resume-wrapper-top-level {
    height: 500px;
    margin-left: -145%;
-   margin-top: -25%;
+   margin-top: -40%;
    width: 300px;
-   z-index: 999999999999999999999999999999 !important;
+   z-index: 999999999999999999999999999 !important;
 
 }
 

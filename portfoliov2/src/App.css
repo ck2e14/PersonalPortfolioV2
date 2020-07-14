@@ -20,8 +20,6 @@
   padding: 1%;
   height: 3vh;
   font-size: 1.5vw;
-  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
-  animation-delay: 2s;
 }
 
 .top-bar{
@@ -85,6 +83,7 @@
   justify-content: center;
   align-items: center;
   font-weight: bold; 
+  z-index: 1;
   font-size: 3em; 
 }
 
@@ -93,6 +92,7 @@
   font-size: 2vw;
   font-weight: bold !important;
   border-radius: 5px;
+  background-color: rgb(34, 34, 34)   ;
   padding-top: .5%;
   padding-bottom: .5%;
   letter-spacing: .5vw;
@@ -110,6 +110,7 @@
 
 .sq-4 {
   z-index: 1;
+
 }
 
 .logo-central {
