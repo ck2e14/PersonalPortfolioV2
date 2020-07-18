@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Resume-container-style.css'
 
-const file ='https://u.pcloud.link/publink/show?code=XZuybNkZ5iogAJheh6YfWiAxVHnTy0unG7VX'
+const file ='https://u.pcloud.link/publink/show?code=XZbHUNkZSxP5YRgmpQkiKhfX2kRz2pwdJmWV'
 
 export default class ResumeContainer extends Component {
   render() {
