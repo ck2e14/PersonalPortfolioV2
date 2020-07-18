@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProjectCard-style.css';
 import returnIcon2 from '../../../Assets/return2.png';
 import infoIcon from '../../../Assets/info.png';
@@ -7,6 +7,7 @@ export default function ProjectCard(props) {
 
    const [ showFront, setShowFront ] = useState(true);
    const [ changeBackground, setChangeBackground ] = useState(false);
+   const [ operatingSysCheck, setOperatingSysCheck ] = useState(false);
 
    const flickBackgroundimage = () => {
       setTimeout(()=> {
@@ -39,7 +40,7 @@ export default function ProjectCard(props) {
 
             </div> 
          :  
-            <div className="card-back">
+            <div className="card-back" id="card-back">
 
                <img onClick={iconClickHandler} src={returnIcon2} alt="" className="return-icon"/>
 

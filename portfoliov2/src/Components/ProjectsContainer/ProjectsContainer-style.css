@@ -24,7 +24,7 @@
    cursor: pointer;
 }
 
-/* Handle */
+
 .projects-wrapper-flex::-webkit-scrollbar-thumb {
    background: #1ca2ac;
    cursor: pointer;

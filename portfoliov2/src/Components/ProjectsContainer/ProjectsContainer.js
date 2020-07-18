@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import coronavirus from "../../Assets/banner.jpg";
 import ProjectCard from "./ProjectCard/ProjectCard.js";
 import "./ProjectsContainer-style.css";
@@ -9,6 +9,8 @@ import mapstar from "../../Assets/mapstar.png";
 import hygenik3 from "../../Assets/hygenik3.png";
 
 export default function ProjectsContainer() {
+
+ 
   return (
     <div className='projects-wrapper-flex'>
 
