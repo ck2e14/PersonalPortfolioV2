@@ -63,6 +63,19 @@
    color: rgb(206, 63, 63) !important;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+        .card-back {
+                margin-top: 25% !important;
+                overflow: visible !important;
+        } 
+}
+
+@-moz-document url-prefix() { 
+        .card-back {
+                margin-top: 0 !important;
+        }
+      }
+
 .card-back-text-wrap-flex {
    display: flex;
    flex-direction: column;
@@ -94,7 +107,7 @@
    opacity: .3;
 
 }
- 
+
 .project-link:hover {
    color:cyan;
    transform: translateY(-5%);
@@ -136,7 +149,7 @@
      opacity: 1;
    }
 }
- 
+
 @-webkit-keyframes heartbeat {
    from {
      -webkit-transform: scale(1);
@@ -206,4 +219,3 @@
              animation-timing-function: ease-out;
    }
 }
- 
