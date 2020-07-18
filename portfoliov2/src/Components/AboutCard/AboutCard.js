@@ -12,7 +12,7 @@ export default function AboutCard(props) {
 
          <div className="about-card-flex-item about-card-flex-items1and2 about-card-flex-items1">
             I WORK WITH →  
-            <span>  JavaScript</span> <span className="highlight-this">(Async/AJAX, ES6, JWT-authentication) </span><span>React.js</span> <span className="highlight-this">(Hooks, Router, Redux),</span><span> Ruby on Rails </span><span className="highlight-this">(RESTful API backends, protected routes),</span> <span>HTML5, CSS3 </span><span className="highlight-this">(mobile responsive).</span> <span>Learning React Native and Node.js.</span>
+            <span>  JavaScript</span> <span className="highlight-this">(Async/AJAX, ES6, JWT-authentication) </span><span>React.js</span> <span className="highlight-this">(Hooks, Router, Redux),</span><span> Ruby on Rails </span><span className="highlight-this">(RESTful API backends, restricted routes),</span> <span>HTML5, CSS3 </span><span className="highlight-this">(mobile responsive).</span> <span>Learning React Native and Node.js.</span>
          </div>          
 
          <div className="about-card-flex-item about-card-flex-items1and2 about-card-flex-items2">
