@@ -4,8 +4,7 @@
    border-radius: 30px !important;
    overflow: visible;
    margin-top: 70% !important;
-   z-index: 99999999999999999999999 !important;
-
+   z-index: -1 !important;
 }
 
 .resume-download {
@@ -17,7 +16,7 @@
    padding: 1%;
    font-size: 20px;
    position: fixed;
-   z-index: 99999999999999999999999999999999;
+   z-index: 99999;
 }
 
 .resume-wrapper-top-level {
@@ -25,7 +24,7 @@
    margin-left: -145%;
    margin-top: -40%;
    width: 300px;
-   z-index: 999999999999999999999999999 !important;
+   z-index: 999999 !important;
 
 }
 
@@ -33,4 +32,6 @@
    transform: scale(1.025);
    text-shadow: 1px 1px 5px rgb(0, 255, 255);
 }
+
+
 

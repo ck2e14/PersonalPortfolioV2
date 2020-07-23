@@ -24,10 +24,11 @@ function App() {
   }
 
   const handleResumeClick = () => {
-    setResumeIsActive(true);
+    // setResumeIsActive(true);
     setContactIsActive(false);
     setAboutIsActive(false);
     setProjectsIsActive(false);
+    
   }
 
   const handleContactClick = () => {
@@ -92,7 +93,7 @@ function App() {
     <>
     <div className="top-bar" onClick={() => clickEsc()}>X</div>
     <div className="bot-bar">
-      Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | NoSQl | SQLite/PostgreSQL | CD/CI | Git   
+      Christopher Kennedy | Full-stack web development | JavaScript ES6, React | Ruby on Rails | NoSQl | SQLite/PostgreSQL | CD | Git   
     </div>
     
       <div className="center-this">
@@ -115,10 +116,12 @@ function App() {
 
             <div className="app-grid-square sq-3"
               onClick={handleResumeClick} >
-              { !resumeIsActive ? 
+              { !resumeIsActive ? <a href='https://drive.google.com/uc?export=download&id=1qcO1gjAVS813sJUr2MFIIhraHeCdem66' className="resume-download" download>
                 <div className="card-title-text">
                   RESUMÉ  
                 </div> 
+              </a>
+           
             : <ResumeContainer /> }
             </div>    
 
