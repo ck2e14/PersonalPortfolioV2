@@ -1,5 +1,5 @@
 Personal portfolio: projects, skills and resume.
  
-This site is hosted at 
+Hosted at 
 chriskennedy.live
 
