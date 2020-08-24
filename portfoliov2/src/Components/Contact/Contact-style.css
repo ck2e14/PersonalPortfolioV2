@@ -1,0 +1,120 @@
+.contact-wrapper {
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   top: 400vh;
+}
+
+.contact-bg {
+   position: absolute;
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   top: 400vh;
+   /* filter: blur(3px); */
+}
+
+.contact-scroller {
+   position: absolute;
+   left: 50%;
+   top: 495vh;
+   transform: translateX(-50%) rotate(180deg);
+   max-height: 1vh;
+   max-width: 4vw;
+   bottom: 0;
+   transition: all .5s;
+}
+
+.contact-contents {
+   position: relative;
+   top: 50vh;
+   color: rgb(153, 153, 153);
+   font-size: 1.5vw;
+   width: 100vw;
+   left: 50%;
+   background-color: rgba(34, 34, 34, 0.95);
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact-contents p {
+   padding: 2%;
+   padding-left: 10%;
+   padding-right: 10%;
+   text-align: center;
+}
+
+.contact-contents span {
+   color: cyan;
+}
+
+.icons-wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   min-width: 12vw;
+}
+
+.link-icon {
+   height: 4vh;
+   width: 5vh;
+   margin: 5%;
+   cursor: pointer;
+   transition: all .25s;
+}
+
+.email {
+   height: 3vh;
+}
+
+.email:hover {
+   filter: invert(1);
+}
+
+.github {
+
+}
+
+.github:hover {
+   filter: invert(.6);
+}
+
+.linkedin {
+   filter: invert(1);
+}
+
+.linkedin:hover {
+   filter: invert(.1);
+}
+
+.tooltip {
+   text-decoration: none;
+   color: rgb(81, 150, 144);
+   display: none;
+   position: absolute;
+   margin-top: -2%;
+   margin-left: -.7%;
+   animation: fade-in .5s;
+}
+
+.linkage:hover > .tooltip {
+   display: block;
+}
+
+.tooltipEmail {
+   text-decoration: none;
+   color: rgb(81, 150, 144);
+   display: none;
+   position: absolute;
+   margin-top: -2.25%;
+   animation: fade-in .5s;
+   margin-left: -.5%;
+}
+
+.linkage:hover > .tooltipEmail {
+   display: block;
+}

@@ -1,0 +1,65 @@
+.resume-wrapper {
+   position: absolute;
+   top: 300vh;
+   overflow: hidden;
+   width: 100vw;
+   height: 100vh;
+}
+
+.resume-background {
+   position: absolute;
+   height: 100vh;
+   /* filter: blur(5px); */
+   top: 300vh;
+   width: 100vw;
+}
+
+.resume-scroller {
+   position: absolute;
+   left: 50%;
+   top: 390vh;
+   transform: translateX(-50%);
+   max-height: 1vh;
+   max-width: 4vw;
+   bottom: 0;
+   transition: all .5s;
+}
+
+.resume-embed {
+   position: relative;
+   left: 50%;
+   top: 17%;
+   transform: translateX(-50%);
+}
+
+.resume-title {
+   position: absolute;
+   top: 305vh;
+   left: 15%;
+   color: rgb(44, 44, 44);
+   font-size: 3.2vw;
+}
+
+.resume-title span {
+   color: rgb(117, 204, 117);
+}
+
+.resume-download-link {
+   color: grey;
+   position: absolute;
+   top: 390vh;
+   left: 2%;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-size: 1vw;
+   transition: all .25s;
+   z-index: 999;
+   /* font-weight: bold; */
+   background-color: rgb(59, 59, 59);
+   padding: 5px; 
+   border-radius: .25vw;;
+}
+
+.resume-download-link:hover {
+   color: rgb(127, 206, 163);
+}

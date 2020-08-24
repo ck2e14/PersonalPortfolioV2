@@ -1,0 +1,111 @@
+.skills-card-flex-wrapper {
+   position: absolute;
+   top: 107vh;
+   left: 55vw;
+   /* transform: translateX(-50%); */
+   width: 55vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-radius: .5vw;
+   height: 90vh;
+   transition: all .25s;
+}
+
+.skills-card-item {
+   position: relative;
+   width: 50%;
+   /* min-height: 24vh; */
+   height: fit-content;
+   border-radius: .5vw;
+   font-weight: 500;
+   background-color: rgb(248, 248, 248);
+   /* border: 2px solid rgb(112, 202, 152); */
+   box-shadow: 0px 0px 15px rgb(0, 0, 0);
+   margin: 1vh;
+   text-align: center;
+   background-color: rgb(37, 37, 37);
+   transition: all .5s;
+   cursor: default;
+   overflow: hidden;
+}
+
+.title {
+   font-size: 1.5vw;
+   /* width: fit-content; */
+   color: rgb(5, 5, 5);
+   text-align: center;
+   /* border-top-right-radius: .5vw;
+   border-top-left-radius: .5vw; */
+   pointer-events: painted;
+   background-color: rgb(112, 202, 152);
+   left: 50%;
+   position: relative;
+   transform: translate(-50%);
+   padding: 2%;
+}
+
+.title span {
+   color: rgb(235, 235, 235);
+}
+
+.skills {
+   position: absolute;
+   left: 50%;
+   top: 145vh;
+}
+
+.skills-card-content {
+   color: rgb(221, 221, 221);
+   font-size: 1vw ;
+   position: relative;
+   text-align: center;
+   width: 100%;
+   padding: 3%;
+   margin-top: 1%;
+   left: 50%;  
+   transform: translate(-50%);
+}
+
+.list {
+   color: rgb(165, 165, 165);
+   position: relative;
+   text-align: left;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-top: 2%;
+   font-size: .9vw; 
+   /* color: rgb(48, 48, 48); */
+}
+
+.skills-card-content span {
+   color: rgb(76, 214, 214);
+}
+
+ul {
+   list-style: none; /* Remove default bullets */
+   line-height: 1.25;
+}
+
+ul li::before {
+   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+   color:rgb(0, 255, 115);; /* Change the color */
+   font-weight: bold; /* If you want it to be bold */
+   display: inline-block; /* Needed to add space between the bullet and the text */
+   width: 2em; /* Also needed for space (tweak if needed) */
+   margin-left: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.link {
+   color: rgb(168, 168, 168);
+   text-emphasis: none;
+   font-style: italic;
+   text-decoration: none;
+   padding-left: 5%;
+   font-size: .75vw; 
+   transition: all .5s
+}
+
+.link:hover {
+   color: cyan;
+}

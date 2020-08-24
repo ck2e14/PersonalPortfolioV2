@@ -1,0 +1,124 @@
+.card-wrapper {
+   min-height: 30vh;
+   max-width: 30vw;
+   width: 100%;
+   border-radius: .4vw;
+   cursor: pointer;
+   color: rgb(75, 75, 75);
+   overflow:hidden;
+   background-size: contain;
+   /* transition: all .25s !important; */
+}
+
+.card-front {
+   height: 100%;
+   min-height: 30vh;
+   max-width: 30vw;
+   width: 100%;
+   position: relative;
+   border-radius: .4vw;
+   font-size: 2vw;
+   background-size: cover;
+   background-repeat: no-repeat; 
+   overflow: hidden;
+}
+
+.card-back {
+   height: 100%;
+   min-height: 30vh;
+   max-width: 30vw;
+   width: 100%;
+   position: relative;
+   border-radius: .4vw;
+   font-size: 1.5vw;
+   overflow: hidden;
+   background-color: rgb(32, 32, 32);
+}
+
+.hover-target {
+   min-height: 100%;;
+   position: relative;
+
+}
+
+.name {
+   text-align: center;
+   padding: 2%;   
+   font-family: Roboto;
+   position: relative;
+   font-size: 1.5vw;
+   background-color: rgb(43, 43, 43);
+   margin-top: 0%;
+   color: rgb(255, 255, 255);
+   /* transform: translateY(-50%);   */
+}
+
+.back-name {
+   text-align: center;
+   color: rgb(223, 223, 223);
+   transition: all .5s;
+   font-size: 1.5vw;
+   padding: 2%;  
+   /* background-color: rgb(112, 202, 152); */
+   font-family: Roboto;
+   position: relative;
+   margin-top: 0%;
+}
+
+.back-contents {
+   padding: 3%;
+   color: rgb(168, 168, 168);
+   position: relative;
+   animation: fade-in .25s;
+   margin-top: 6%;
+   min-height: 100%;
+   font-size: 1.1vw ;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.contents-blurb {
+   top: 50%;
+   height: 100%;
+   position: relative;
+   flex: 3;
+   /* align-items: center; */
+
+}
+
+.proj-link {
+   color: rgb(114, 114, 114);
+   text-emphasis: none;
+   text-decoration: none;
+   /* font-size: .8vw;  */
+   transition: all .5s;
+}
+
+.links {
+   color: rgb(114, 114, 114);
+
+}
+
+.proj-link:hover {
+   color: cyan;
+}
+
+
+@-webkit-keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}

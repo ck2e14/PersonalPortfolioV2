@@ -1,0 +1,73 @@
+.projects-wrapper {
+   height: 100vh;
+   width: 100vw;
+   position: absolute;
+   top: 200vh;
+   overflow: hidden;
+}
+
+.projects-bg {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   filter: blur(4px);
+}
+
+.projects-content {
+   position: relative;
+   top: 0%;
+   padding-top: 2%;
+   height: 100%;
+   width: 100%;
+}
+
+.projects-intro {
+   font-size: 3.2vw;
+   width: 100vw;
+   padding: 1%;
+   color: rgb(46, 46, 46);
+   font-family: Roboto;
+   position: relative;  
+   top: 3vh;
+   left: 4vw;
+   margin-bottom: 15%;
+   z-index: 20;
+}
+
+.projects-intro span { 
+   color: rgb(112, 202, 152);
+
+}
+
+.projects-grid {
+   display: grid;
+   width: 95%;
+   height: 60vh;
+   position: relative;
+   left: 50%;
+   top: -18%;
+   background-color: transparent;
+   transform: translateX(-50%);
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 25px;
+   grid-row-gap: 25px;
+}
+
+.grid-item {
+   min-height: 23vh;
+   border-radius: .5vw;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.projects-scroller {
+   position: absolute;
+   left: 50%;
+   top: 290vh;
+   transform: translateX(-50%);
+   max-height: 1vh;
+   filter: invert(.8);
+   max-width: 4vw;
+   bottom: 0;
+   transition: all .5s;
+}

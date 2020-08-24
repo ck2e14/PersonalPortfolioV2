@@ -1,261 +1,34 @@
 * {
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none !important;
-  color: white;
-  /* background: black;  ; */
-  /* border-radius: 10px; */
+   /* transition: all .25s; */
+   user-zoom: fixed;
+   font-family: Roboto;
+   user-select: none;
+   
 }
 
-.highlight-this {
-  color: rgb(0, 251, 255) !important;
+.app-content {
+   position: absolute;
+   width: 99.2vw;
+   height: 500vh;
+   top: 0;
+   left: 0;
+   overflow: hidden !important;
+   font-family: 'Tinos', serif;
+   color: rgb(219, 219, 219);
 }
 
-.bot-bar {
-  color: grey;
-  position: absolute;
-  z-index: 9;
-  bottom: 0;
-  left: 0;
-  font-weight: bold;
-  padding: 1%;
-  height: 3vh;
-  font-size: 1.5vw;
+.app-content::-webkit-scrollbar {
+   width: 10px;
 }
 
-.top-bar{
-  color: rgb(0, 255, 255);
-  position: absolute;
-  z-index: 9;
-  top: 1%;
-  right: 1%;
-  font-weight: 1000;
-  padding: .5%;
-  padding-left: 1%;
-  padding-right: 1%;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  font-size: 2vw;
-  transition: all .25s;
-  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation-delay: 2s;
+.app-content::-webkit-scrollbar-track {
+   background: #a12e2e;
 }
 
-.top-bar:hover {
-  border: 1px solid white;
-  padding-top: .65% !important;
+.app-content::-webkit-scrollbar-thumb {
+   background: rgb(136, 66, 66);
 }
 
-.center-this {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(19, 19, 19);
-  background-position: top;
-  background-size: cover;
-  align-items: center;
-}
-
-.app-grid-container {
-  display: grid;
-  position: relative;
-  overflow: hidden;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 45% 45%;
-  gap: 1% 1%;
-  grid-template-areas: ". ." ". .";
-  height: 100%;
-  max-height: 100%;
-  width: 100vw;
-}
-
-.app-grid-square {
-  position: relative;
-  max-height: 98%;
-  width: 100%;
-  border-radius: 10px;
-  color: #ffffff;
-  transition: filter .5s, transform .25s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold; 
-  z-index: 1;
-  font-size: 3em; 
-}
-
-.card-title-text {
-  color: rgb(139, 139, 139);
-  font-size: 2vw;
-  font-weight: bold !important;
-  border-radius: 5px;
-  background-color: rgb(34, 34, 34)   ;
-  padding-top: .5%;
-  padding-bottom: .5%;
-  letter-spacing: .5vw;
-  transition: margin-top .25s, font-size .5s, color .5s, text-shadow .25s, letter-spacing .5s, text-shadow .2s;
-  /* -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530); */
-  /* animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530); */
-}
-
-.card-title-text:hover {
-  cursor: pointer; 
-  letter-spacing: .65vw;
-  /* color: rgb(207, 207, 207); */
-  /* text-shadow: 1px 1px 10px rgb(0, 0, 0); */
-}
-
-.sq-4 {
-  z-index: 1;
-
-}
-
-.logo-central {
-  position: fixed;
-  height: 20%;
-  left: 43.5%;
-  animation-delay: .5s;
-  opacity: .99;
-  transition: all .25s; 
-  background-color: none !important ;
-  animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-  cursor: pointer;
-}
-
-.shader-layer {
-  position: fixed;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: -1;
-  width: 100%;
-  background-color: rgba(0, 0, 0);
-}
-
-@-webkit-keyframes slide-in-blurred-bottom {
-  0% {
-    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-blurred-bottom {
-  0% {
-    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes roll-in-left {
-  0% {
-    -webkit-transform: translateX(-800px) rotate(-540deg);
-            transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-            transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes roll-in-blurred-left {
-  0% {
-    -webkit-transform: translateX(-1000px) rotate(-720deg);
-            transform: translateX(-1000px) rotate(-720deg);
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-            transform: translateX(0) rotate(0deg);
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
+.app-content::-webkit-scrollbar-thumb:hover {
+   background: rgb(177, 75, 75);
 }

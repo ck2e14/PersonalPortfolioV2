@@ -1,0 +1,146 @@
+.landing-bg {
+   height: 100vh;
+   min-width: 101vw;
+   position: absolute;
+   transition: all .25s;
+   opacity: 1;
+   border-bottom: 5px solid rgba(15, 15, 15, 0.9);
+   animation: lower-brightness 2s;
+   animation-fill-mode: forwards;
+   overflow: hidden;
+}
+
+/* .logo {
+   position: absolute;
+   height: 10vh;
+   top: 640px;
+   left: 1280px;
+   transform: translate(-50%, -50%);
+   z-index: 20;
+   filter: saturate(0) contrast(.01);
+} */
+
+.landing-wrapper {
+   position: absolute;
+   top: 2vh;
+   width: 100%;
+   height: 25vh;
+   /* background-color: rgba(15, 15, 15, 0.95); */
+   overflow-x: hidden !important;
+   transition: all .2s;
+   opacity: 1;
+   -webkit-animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+   animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+   
+}
+
+.my-name-is {
+   position: relative;
+   top: 50%;
+   width: 100%;   
+   padding-left: 5%;
+   line-height: .75;
+   transform: translateY(-50%);
+   overflow-x: visible !important;
+   overflow-y: visible;  
+   font-family: 'Tinos', serif !important;
+   color: rgb(61, 61, 61);
+   font-size: 6vw;
+}
+
+.my-name-is span {
+   font-size: 3vw;
+   /* font-family: 'Tinos', serif !important; */
+
+}
+
+.chris-span {
+   color: rgb(112, 202, 152);
+   /* color: rgb(61, 204, 197); */
+   font-size: 5vw !important;
+}
+
+.chris-span2 {
+   /* color: rgb(61, 204, 197); */
+   color: rgb(112, 202, 152);
+   font-size: 3vw !important;
+}
+
+.landing-scroller {
+   position: absolute;
+   left: 50%;
+   top: 90vh;
+   transform: translateX(-50%);
+   max-height: 1vh;
+   max-width: 4vw;
+   bottom: 0;
+   color: white;
+   -webkit-animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+   animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+   animation-delay: 1.5s;
+}
+
+.down-arrow {
+   position: relative;
+   width: 60%;
+   transition: all .5s;
+   /* filter: invert(.8); */
+   cursor: pointer;
+}
+
+.down-arrow:hover {  
+   animation: bounce 1s linear infinite;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-blur-out
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-blur-out {
+0% {
+   -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+}
+100% {
+   -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+}
+}
+
+@keyframes text-blur-out {
+0% {
+   -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+}
+100% {
+   -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+}
+}
+
+@keyframes bounce {
+   0% {
+      padding-top: 0%;
+      filter: invert(.4);  
+   }
+   50% {
+      padding-top: 10%; 
+      filter: invert(.7);  
+   }
+   100% {
+      padding-top: 0%;
+         filter: invert(.4);  
+   }
+}
+
+@keyframes lower-brightness {
+   0% {
+      filter: brightness(3);
+      /* opacity: 0; */
+   }
+   100% {
+      filter: brightness(1);
+      /* opacity: 1; */
+   }
+}
