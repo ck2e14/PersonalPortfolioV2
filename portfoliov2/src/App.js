@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, lazy, Suspense } from "react";
 import "./App.css";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Resume from "./Components/Resume/Resume";
 import NavBar from "./Components/NavBar/NavBar";
 import Contact from "./Components/Contact/Contact";
-import Projects from "./Components/Projects/Projects";
+// import Projects from "./Components/Projects/Projects";
 import { isSafari } from "react-device-detect";
+const Projects = lazy(() => import("./Components/Projects/Projects"))
 
 function App() {
   // useEffect(() => {
@@ -44,8 +45,10 @@ function App() {
 
       <AboutMe />
 
-      <Projects />
-
+      <Suspense fallback={ <div className="fallback">Loading...</div> }>
+        <Projects />
+      </Suspense>
+    
       <Resume />
 
       <Contact />

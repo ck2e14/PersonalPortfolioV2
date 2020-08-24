@@ -1,18 +1,14 @@
 import React from 'react';
 import './Projects-style.css'
 import code4 from '../../Assets/Media/code27.jpg'
-import pebble2 from '../../Assets/Media/pebble5.png'
 import ProjectCard from './ProjectCard/ProjectCard'
-import pebblePic from '../../Assets/Media/pebble3.png'
+import pebblePic from '../../Assets/Media/pebble3-min.png'
 import ScrollArrow from '../ScrollArrow/ScrollArrow'
-import hygenik1 from '../../Assets/Media/hygenik2.png'
-import hygenik2 from '../../Assets/Media/hygenik3.png'
-import exchange1 from '../../Assets/Media/exchange1.png'
-import exchange2 from '../../Assets/Media/exchange2.png'
-import mapstar from '../../Assets/Media/mapstar.png'
-import mapstar2 from '../../Assets/Media/mapstar2.png'
-import spaceX from '../../Assets/Media/spaceX.png'
-import rps1 from '../../Assets/Media/rps2.png'
+import hygenik1 from '../../Assets/Media/hygenik2-min.png'
+import exchange1 from '../../Assets/Media/exchange1-min.png'
+import mapstar from '../../Assets/Media/mapstar-min.png'
+import spaceX from '../../Assets/Media/spaceX-min.png'
+import rps1 from '../../Assets/Media/rps2-min.png'
 
 const Projects = () => {
 

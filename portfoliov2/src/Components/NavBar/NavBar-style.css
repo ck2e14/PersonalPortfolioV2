@@ -35,7 +35,7 @@
    padding-right: 2%;
    font-family: 'Roboto', sans-serif;
    transition: all .5s;
-   letter-spacing: 5px;
+   letter-spacing: 15px;
    border-radius: 5px;
    font-weight: 500;
    text-transform: uppercase;
@@ -45,3 +45,5 @@
 .nav-item:hover {
    color: rgb(255, 255, 255);
 }
+
+
