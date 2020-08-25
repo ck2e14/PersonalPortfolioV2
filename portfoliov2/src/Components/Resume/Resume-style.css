@@ -4,6 +4,7 @@
    overflow: hidden;
    width: 100vw;
    height: 100vh;
+   content-visibility: auto;
 }
 
 .resume-background {
@@ -11,6 +12,8 @@
    height: 100vh;
    top: 300vh;
    width: 100vw;
+   content-visibility: auto;
+
 }
 
 .resume-scroller {
