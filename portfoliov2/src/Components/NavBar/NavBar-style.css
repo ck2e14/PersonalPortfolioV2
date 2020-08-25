@@ -40,10 +40,28 @@
    font-weight: 500;
    text-transform: uppercase;
    user-select: none;
+   color: rgb(104, 104, 104);
 }
 
 .nav-item:hover {
    color: rgb(255, 255, 255);
 }
 
-
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .navbar-wrapper {
+      display: inline;
+      animation: none;
+      background-color: black;
+   }
+   .navbar-flex-wrapper {
+      width: 90%;
+   }
+   .nav-item {
+      letter-spacing: .5vw;
+      font-size: 3vw;
+      color: rgb(104, 104, 104);
+   }
+   .nav-item:hover {
+      color: rgb(104, 104, 104);
+   }
+}

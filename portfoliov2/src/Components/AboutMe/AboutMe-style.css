@@ -75,3 +75,29 @@
    bottom: 0;
    transition: all .5s;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .title-bar {
+      font-size: 30px;
+      top: 8%;
+   }
+   .about-blurb{
+      font-size: 13px;
+      width: 90%;
+      top: 23%;
+      /* text-align: center; */
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   .about-blurb span {
+      border-radius: 5px
+   }
+   .about-bg {
+      display: none;
+   }
+   .about-scroller {
+      top: 185vh;
+      max-width: 10vw;
+      user-select: none;
+   }
+}

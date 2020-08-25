@@ -57,13 +57,13 @@
 .chris-span {
    color: rgb(112, 202, 152);
    /* color: rgb(61, 204, 197); */
-   font-size: 5vw !important;
+   font-size: 5vw;
 }
 
 .chris-span2 {
    /* color: rgb(61, 204, 197); */
    color: rgb(112, 202, 152);
-   font-size: 3vw !important;
+   font-size: 3vw ;
 }
 
 .landing-scroller {
@@ -142,5 +142,41 @@
    100% {
       filter: brightness(1);
       /* opacity: 1; */
+   }
+}
+
+/* BREAKPOINTS */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .landing-bg {
+      transform: translateX(-21%);
+   }   
+   .landing-wrapper {
+      top: 0vh;
+      font-size: 5vw !important;
+   }
+   .my-name-is {
+      top: 15vh;
+      font-size: 40px !important;
+      width: 65%;
+      line-height: .75;
+      color: rgb(0, 0, 0);
+   }
+   .my-name-is span {
+      font-size: 15px;
+   }
+   .chris-span {
+      font-size: 40px !important;
+   }
+   .landing-scroller {
+      top: 85vh;
+      max-width: 10vw;
+      user-select: none;
+   }
+   .down-arrow {
+      width: 100%;
+      user-select: none;
+   }
+   .down-arrow:hover{
+      animation: none;
    }
 }

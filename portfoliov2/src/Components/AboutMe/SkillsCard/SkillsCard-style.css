@@ -78,6 +78,10 @@
    /* color: rgb(48, 48, 48); */
 }
 
+.list a {
+   margin-left: 25% ;
+}
+
 .skills-card-content span {
    color: rgb(76, 214, 214);
 }
@@ -108,4 +112,43 @@ ul li::before {
 
 .link:hover {
    color: cyan;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   .skills-card-flex-wrapper {
+      flex-direction: row;
+      top: 155vh;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   .title {
+      font-size: 12px;
+      vertical-align: middle;
+      /* height: 4vh; */
+   }
+   .skills-card-item {
+      min-width: 32vw;
+      min-height: 22vh;
+      margin: .5%;
+   }
+   .skills-card-content {
+      font-size: 8px;
+      /* border: 2px solid white; */
+      max-width: 29vw;
+      left: 0;
+      transform: none;
+   }
+   .list {
+      left: 0;
+      transform: none;
+      margin-top: 10%;
+      font-size: 7px;
+      text-align: left;
+      line-height: 2;
+      margin-left: -35%;
+   }
+   .list a {
+      font-size: 5px;
+   }
 }

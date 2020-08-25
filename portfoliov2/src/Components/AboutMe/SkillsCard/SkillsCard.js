@@ -24,9 +24,9 @@ const SkillsCard = () => {
                <div className="skills-card-content">
                   I like to code things from scratch, and enjoy bringing ideas to life in the browser.
                   <ul className="list">
-                     <li>JavaScript (Promises, Async, ES6, OOP)</li>
+                     <li>JavaScript (ES6, OOP)</li>
                      <li>React.js (Hooks, Router)</li>
-                     <li>Ruby on Rails (API, JWT Auth, OOP)</li>
+                     <li>Ruby on Rails (API, JWT, OOP)</li>
                      <li>HTML</li>
                      <li>CSS</li>
                   </ul>
@@ -41,11 +41,12 @@ const SkillsCard = () => {
                      <li>Git version control</li>
                      <li>Excellent communicator</li>
                      <li>Teamworker</li>
-                     <li>Self-teacher, independent worker</li>
-                     <li>100WPM Typist 
-                        <a href="https://bit.ly/3aJLrux" className="link"target="_blank" rel="noopener noreferrer">110WPM screenshot</a> 
+                     <li>Self-teacher</li>
+                     <li>Independent worker</li>
+                     <li>100WPM Typist <br/>
+                        <a href="https://bit.ly/3aJLrux" className="link"target="_blank" rel="noopener noreferrer">110WPM </a> <br/>
                         {/* <a href="https://bit.ly/3eITkR4" className="link"target="_blank" rel="noopener noreferrer">https://bit.ly/3eITkR4</a> <br/>  */}
-                        <a href="https://10fastfingers.com/user/2183713/" className="link"target="_blank" rel="noopener noreferrer">Average speed</a>
+                        <a href="https://10fastfingers.com/user/2183713/" className="link"target="_blank" rel="noopener noreferrer">Avg. speed</a>
                      </li>
                   </ul>
                </div>

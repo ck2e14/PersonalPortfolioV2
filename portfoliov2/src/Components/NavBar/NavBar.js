@@ -3,7 +3,6 @@ import './NavBar-style.css'
 import {
    // BrowserView,
    // MobileView,
-   // isBrowser,
    // isMobile,
    isSafari,
    isChrome

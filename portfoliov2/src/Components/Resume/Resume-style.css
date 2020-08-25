@@ -9,7 +9,6 @@
 .resume-background {
    position: absolute;
    height: 100vh;
-   /* filter: blur(5px); */
    top: 300vh;
    width: 100vw;
 }
